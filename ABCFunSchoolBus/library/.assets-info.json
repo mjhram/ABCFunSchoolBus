@@ -1,0 +1,965 @@
+{
+  "version": "1.0.1",
+  "map": {
+    "resources": {
+      "time": 1795328255458.9443,
+      "uuid": "185ebc1f-0f23-42a3-893d-999e1872991d"
+    },
+    "scenes": {
+      "time": 1795328156393.8313,
+      "uuid": "fc476280-cddf-4079-8cc0-6427157bd911"
+    },
+    "scripts": {
+      "time": 1795351371943.7144,
+      "uuid": "4e1eaa42-d801-4bac-8452-adaf9a601dc1"
+    },
+    "resources\\textures": {
+      "time": 1795431410140.5815,
+      "uuid": "4bb24467-3eb9-4999-86a3-be5c6350fc8f"
+    },
+    "scripts\\GameMain.ts": {
+      "time": 1795363950683.9902,
+      "uuid": "7c1d2a10-3b4e-4f5a-8c9d-0e1f2a3b4c5d"
+    },
+    "resources.meta": {
+      "time": 1795328190868.0078
+    },
+    "scenes.meta": {
+      "time": 1795328255465.931
+    },
+    "scripts.meta": {
+      "time": 1795328255465.931
+    },
+    "resources\\textures.meta": {
+      "time": 1795328255466.928
+    },
+    "scripts\\GameMain.ts.meta": {
+      "time": 1795328255469.92
+    },
+    "scenes\\main.scene": {
+      "time": 1795328265490.4517,
+      "uuid": "5e8f9a01-2b3c-4d5e-9f60-71829304a5b6"
+    },
+    "resources\\textures\\button_arrow_left.png": {
+      "time": 1795327623552.5564,
+      "uuid": "de4b46c9-6a06-4588-9551-f7a328c843c1"
+    },
+    "resources\\textures\\button_arrow_right.png": {
+      "time": 1795327624783.4841,
+      "uuid": "17f587f5-7e0b-449b-bef7-6f06a5b72929"
+    },
+    "resources\\textures\\button_brake.png": {
+      "time": 1795327627084.7632,
+      "uuid": "6de216cb-8b8f-4636-969b-a8fa6bfff8e5"
+    },
+    "resources\\textures\\button_brake_pressed.png": {
+      "time": 1795327628960.2805,
+      "uuid": "597418e2-c424-4edc-ab48-ae50f13c8f25"
+    },
+    "resources\\textures\\button_horn.png": {
+      "time": 1795327631148.002,
+      "uuid": "f10910d7-e2e7-46aa-b0e0-b2084fade787"
+    },
+    "resources\\textures\\button_horn_pressed.png": {
+      "time": 1795327633165.3108,
+      "uuid": "8a5b68da-ebec-4d31-a769-78fe445c5c0c"
+    },
+    "resources\\textures\\dashboard.png": {
+      "time": 1795327635296.6826,
+      "uuid": "c116512e-b4da-4e1e-b5b9-380288bb3258"
+    },
+    "resources\\textures\\letter_A.png": {
+      "time": 1795346517140.2688,
+      "uuid": "d6471b91-0f77-4954-9d74-ca175e52f034"
+    },
+    "resources\\textures\\letter_B.png": {
+      "time": 1795346518341.345,
+      "uuid": "6a161663-890b-40a8-8cbb-3bd58f0b092c"
+    },
+    "resources\\textures\\letter_C.png": {
+      "time": 1795346519522.318,
+      "uuid": "23408eb5-9ccf-4670-945d-69f09d312f78"
+    },
+    "resources\\textures\\letter_D.png": {
+      "time": 1795346520884.311,
+      "uuid": "1046ce45-071d-4dda-b9b8-53766d910977"
+    },
+    "resources\\textures\\letter_E.png": {
+      "time": 1795346522029.029,
+      "uuid": "bb130f70-fda4-45b9-920c-4900fd28a39c"
+    },
+    "resources\\textures\\letter_F.png": {
+      "time": 1795346523149.6597,
+      "uuid": "14ec47b1-9b64-4392-8ae7-5fd06a2b63fc"
+    },
+    "resources\\textures\\letter_G.png": {
+      "time": 1795346524419.9868,
+      "uuid": "dbb8cb3f-1b62-46d8-94f2-060f2d389036"
+    },
+    "resources\\textures\\letter_H.png": {
+      "time": 1795346525693.1592,
+      "uuid": "75268c94-1083-4b85-a9c1-1835c2c6c8f1"
+    },
+    "resources\\textures\\letter_I.png": {
+      "time": 1795346526816.3936,
+      "uuid": "a8f2b60f-3127-42be-a243-10a8337ddebc"
+    },
+    "resources\\textures\\letter_J.png": {
+      "time": 1795346527955.3252,
+      "uuid": "4121a36c-4807-40bd-b187-0b7b2b96bd9b"
+    },
+    "resources\\textures\\mascot_puppy.png": {
+      "time": 1795327663807.3745,
+      "uuid": "0ef6be7c-fab9-4df8-958b-761b0e0007e5"
+    },
+    "resources\\textures\\progressbar_frame.png": {
+      "time": 1795327666580.7925,
+      "uuid": "532e7b18-8c04-4e41-b239-def053bc4d65"
+    },
+    "resources\\textures\\rearview_mirror.png": {
+      "time": 1795327669184.3125,
+      "uuid": "5948c67e-7217-42bd-95ae-ab56c6a2b9d7"
+    },
+    "resources\\textures\\road_tile.png": {
+      "time": 1795327670216.922,
+      "uuid": "fbcb874c-e116-4b00-8fd2-e6234eb4df40"
+    },
+    "resources\\textures\\scenery_houses.png": {
+      "time": 1795327672911.611,
+      "uuid": "812b8ac6-a4fc-46e2-ac23-445d7195eca0"
+    },
+    "resources\\textures\\scenery_trees.png": {
+      "time": 1795327674959.5498,
+      "uuid": "821c4188-709c-455a-afe9-9a268aea5c4b"
+    },
+    "resources\\textures\\speech_bubble.png": {
+      "time": 1795327676467.6794,
+      "uuid": "1ba46c89-c4ed-44ce-80b5-9a513320cca5"
+    },
+    "resources\\textures\\speedometer.png": {
+      "time": 1795327678060.1067,
+      "uuid": "e4b4dc05-8376-4aae-9935-31a759487e72"
+    },
+    "resources\\textures\\star_golden.png": {
+      "time": 1795327680435.7463,
+      "uuid": "9b011140-9812-41fd-a3f0-ea0acd6e605d"
+    },
+    "resources\\textures\\steering_wheel.png": {
+      "time": 1795327682337.0215,
+      "uuid": "47f02583-0b27-4077-89da-066c003fb1d6"
+    },
+    "resources\\textures\\traffic_ice_cream_van.png": {
+      "time": 1795327684802.199,
+      "uuid": "e20d5775-934f-4b2f-9daf-6d041abae56d"
+    },
+    "resources\\textures\\vfx_smoke_puff.png": {
+      "time": 1795327687138.5884,
+      "uuid": "c2ee14bc-ab6a-44fb-b3b5-f7c187532329"
+    },
+    "resources\\textures\\vfx_star_burst.png": {
+      "time": 1795327689616.1086,
+      "uuid": "76fb1235-e1f2-4610-8126-76391193e187"
+    },
+    "scenes\\main.scene.meta": {
+      "time": 1795328156389.1492
+    },
+    "resources\\textures\\button_brake.png.meta": {
+      "time": 1795328265504.4155
+    },
+    "resources\\textures\\button_arrow_right.png.meta": {
+      "time": 1795328265507.4055
+    },
+    "resources\\textures\\button_arrow_left.png.meta": {
+      "time": 1795328265509.4016
+    },
+    "resources\\textures\\button_brake_pressed.png.meta": {
+      "time": 1795328265512.3928
+    },
+    "resources\\textures\\button_horn.png.meta": {
+      "time": 1795328265520.3708
+    },
+    "resources\\textures\\button_horn_pressed.png.meta": {
+      "time": 1795328265528.35
+    },
+    "resources\\textures\\letter_B.png.meta": {
+      "time": 1795328265532.3384
+    },
+    "resources\\textures\\dashboard.png.meta": {
+      "time": 1795328265534.3364
+    },
+    "resources\\textures\\letter_A.png.meta": {
+      "time": 1795328265539.3208
+    },
+    "resources\\textures\\letter_C.png.meta": {
+      "time": 1795328265548.2961
+    },
+    "resources\\textures\\letter_D.png.meta": {
+      "time": 1795328265554.2808
+    },
+    "resources\\textures\\letter_F.png.meta": {
+      "time": 1795328265558.2688
+    },
+    "resources\\textures\\letter_E.png.meta": {
+      "time": 1795328265559.2673
+    },
+    "resources\\textures\\letter_G.png.meta": {
+      "time": 1795328265571.2395
+    },
+    "resources\\textures\\letter_H.png.meta": {
+      "time": 1795328265584.2007
+    },
+    "resources\\textures\\mascot_puppy.png.meta": {
+      "time": 1795328265592.1792
+    },
+    "resources\\textures\\letter_J.png.meta": {
+      "time": 1795328265594.174
+    },
+    "resources\\textures\\letter_I.png.meta": {
+      "time": 1795328265599.1606
+    },
+    "resources\\textures\\progressbar_frame.png.meta": {
+      "time": 1795328265600.158
+    },
+    "resources\\textures\\rearview_mirror.png.meta": {
+      "time": 1795328265612.1255
+    },
+    "resources\\textures\\road_tile.png.meta": {
+      "time": 1795328265617.113
+    },
+    "resources\\textures\\scenery_houses.png.meta": {
+      "time": 1795328265619.1077
+    },
+    "resources\\textures\\speech_bubble.png.meta": {
+      "time": 1795328265623.0964
+    },
+    "resources\\textures\\scenery_trees.png.meta": {
+      "time": 1795328265628.084
+    },
+    "resources\\textures\\speedometer.png.meta": {
+      "time": 1795328265640.0515
+    },
+    "resources\\textures\\steering_wheel.png.meta": {
+      "time": 1795328265644.0427
+    },
+    "resources\\textures\\star_golden.png.meta": {
+      "time": 1795328265646.0354
+    },
+    "resources\\textures\\traffic_ice_cream_van.png.meta": {
+      "time": 1795328265648.0361
+    },
+    "resources\\textures\\vfx_smoke_puff.png.meta": {
+      "time": 1795328265650.024
+    },
+    "resources\\textures\\vfx_star_burst.png.meta": {
+      "time": 1795328265656.0088
+    },
+    "resources\\textures\\letter_K.png.meta": {
+      "time": 1795346563826.3108
+    },
+    "resources\\textures\\letter_L.png.meta": {
+      "time": 1795346563824.3162
+    },
+    "resources\\textures\\letter_M.png.meta": {
+      "time": 1795346563821.3242
+    },
+    "resources\\textures\\letter_N.png.meta": {
+      "time": 1795346563818.3325
+    },
+    "resources\\textures\\letter_O.png.meta": {
+      "time": 1795346563832.2947
+    },
+    "resources\\textures\\letter_P.png.meta": {
+      "time": 1795346563883.159
+    },
+    "resources\\textures\\letter_Q.png.meta": {
+      "time": 1795346563949.9802
+    },
+    "resources\\textures\\letter_R.png.meta": {
+      "time": 1795346563887.1494
+    },
+    "resources\\textures\\letter_S.png.meta": {
+      "time": 1795346563893.1328
+    },
+    "resources\\textures\\letter_T.png.meta": {
+      "time": 1795346563892.1348
+    },
+    "resources\\textures\\letter_U.png.meta": {
+      "time": 1795346563910.086
+    },
+    "resources\\textures\\letter_V.png.meta": {
+      "time": 1795346563997.0913
+    },
+    "resources\\textures\\letter_W.png.meta": {
+      "time": 1795346563923.053
+    },
+    "resources\\textures\\letter_X.png.meta": {
+      "time": 1795346563918.0654
+    },
+    "resources\\textures\\letter_Y.png.meta": {
+      "time": 1795346563951.975
+    },
+    "resources\\textures\\letter_Z.png.meta": {
+      "time": 1795346564001.0862
+    },
+    "resources\\textures\\letter_N.png": {
+      "time": 1795346532704.3142,
+      "uuid": "6c48d0bc-41cf-4d68-95e4-af7c01b21f01"
+    },
+    "resources\\textures\\letter_M.png": {
+      "time": 1795346531534.35,
+      "uuid": "9f8aea98-eace-4638-83ef-b62286c7a322"
+    },
+    "resources\\textures\\letter_L.png": {
+      "time": 1795346530352.5864,
+      "uuid": "706b7e38-6da7-41d0-98dc-1c7703e38e04"
+    },
+    "resources\\textures\\letter_K.png": {
+      "time": 1795346529192.6963,
+      "uuid": "5f94ab20-c56d-4c0c-b429-bab0730a9741"
+    },
+    "resources\\textures\\letter_O.png": {
+      "time": 1795346533879.1133,
+      "uuid": "c5e5c710-9c3a-4c18-8279-7e5cae8eca05"
+    },
+    "resources\\textures\\letter_P.png": {
+      "time": 1795346535014.9094,
+      "uuid": "d8cfa1b3-7e35-4ffb-9319-e5548d8367a0"
+    },
+    "resources\\textures\\letter_R.png": {
+      "time": 1795346537376.066,
+      "uuid": "d89aa14b-cdb4-47b0-8727-3bf2478aee79"
+    },
+    "resources\\textures\\letter_T.png": {
+      "time": 1795346539836.7637,
+      "uuid": "58649b1a-2e9c-49e3-9842-08f1ca5410c4"
+    },
+    "resources\\textures\\letter_S.png": {
+      "time": 1795346538563.708,
+      "uuid": "33e4df34-dbed-4a50-b954-1d9ab2fad070"
+    },
+    "resources\\textures\\letter_U.png": {
+      "time": 1795346541054.0613,
+      "uuid": "57e9916d-6ed9-4273-a923-1d52e83ca9d1"
+    },
+    "resources\\textures\\letter_X.png": {
+      "time": 1795346545076.5525,
+      "uuid": "9d1c59e3-9a49-447a-b397-ad298c0a2b34"
+    },
+    "resources\\textures\\letter_W.png": {
+      "time": 1795346543545.506,
+      "uuid": "0fbb4c49-d9fb-4a20-a523-9460a1f0adae"
+    },
+    "resources\\textures\\letter_Q.png": {
+      "time": 1795346536202.0164,
+      "uuid": "5d63ca44-4090-4033-b307-2eb9294eeb4c"
+    },
+    "resources\\textures\\letter_Y.png": {
+      "time": 1795346546194.0105,
+      "uuid": "104b0697-1f62-479d-bc07-5ede91333dc4"
+    },
+    "resources\\textures\\letter_V.png": {
+      "time": 1795346542301.396,
+      "uuid": "0bfee61a-886a-4301-ac78-652bd5379cf4"
+    },
+    "resources\\textures\\letter_Z.png": {
+      "time": 1795346547338.6765,
+      "uuid": "4bd91bd3-2bd7-4199-922c-8136beab2701"
+    },
+    "resources\\textures\\fx_confetti.png.meta": {
+      "time": 1795431410175.154
+    },
+    "resources\\textures\\fx_firefly.png.meta": {
+      "time": 1795431410179.143
+    },
+    "resources\\textures\\fx_poof.png.meta": {
+      "time": 1795431410185.16
+    },
+    "resources\\textures\\fx_snowflake.png.meta": {
+      "time": 1795431410184.1318
+    },
+    "resources\\textures\\fx_sparkle.png.meta": {
+      "time": 1795431410192.1106
+    },
+    "resources\\textures\\kid_boy_backpack.png.meta": {
+      "time": 1795431410210.0637
+    },
+    "resources\\textures\\kid_boy_glasses.png.meta": {
+      "time": 1795431410215.048
+    },
+    "resources\\textures\\kid_girl_curly.png.meta": {
+      "time": 1795431410228.0127
+    },
+    "resources\\textures\\kid_girl_pigtails.png.meta": {
+      "time": 1795431410222.028
+    },
+    "resources\\textures\\kid_girl_scarf.png.meta": {
+      "time": 1795431410230.0073
+    },
+    "resources\\textures\\kid_toddler_teddy.png.meta": {
+      "time": 1795431410248.9558
+    },
+    "resources\\textures\\lc_a.png.meta": {
+      "time": 1795431410254.9407
+    },
+    "resources\\textures\\lc_b.png.meta": {
+      "time": 1795431410261.922
+    },
+    "resources\\textures\\lc_c.png.meta": {
+      "time": 1795431410271.8945
+    },
+    "resources\\textures\\lc_d.png.meta": {
+      "time": 1795431410275.8848
+    },
+    "resources\\textures\\lc_e.png.meta": {
+      "time": 1795431410292.5996
+    },
+    "resources\\textures\\lc_f.png.meta": {
+      "time": 1795431410305.5562
+    },
+    "resources\\textures\\lc_g.png.meta": {
+      "time": 1795431410314.5315
+    },
+    "resources\\textures\\lc_h.png.meta": {
+      "time": 1795431410316.5264
+    },
+    "resources\\textures\\lc_i.png.meta": {
+      "time": 1795431410327.5413
+    },
+    "resources\\textures\\lc_j.png.meta": {
+      "time": 1795431410339.5078
+    },
+    "resources\\textures\\lc_k.png.meta": {
+      "time": 1795431410348.486
+    },
+    "resources\\textures\\lc_l.png.meta": {
+      "time": 1795431410354.4714
+    },
+    "resources\\textures\\lc_m.png.meta": {
+      "time": 1795431410361.4504
+    },
+    "resources\\textures\\lc_n.png.meta": {
+      "time": 1795431410370.4255
+    },
+    "resources\\textures\\lc_o.png.meta": {
+      "time": 1795431410382.3933
+    },
+    "resources\\textures\\lc_p.png.meta": {
+      "time": 1795431410386.3833
+    },
+    "resources\\textures\\lc_q.png.meta": {
+      "time": 1795431410393.3655
+    },
+    "resources\\textures\\lc_r.png.meta": {
+      "time": 1795431410403.338
+    },
+    "resources\\textures\\lc_s.png.meta": {
+      "time": 1795431410407.3289
+    },
+    "resources\\textures\\lc_t.png.meta": {
+      "time": 1795431410424.2812
+    },
+    "resources\\textures\\lc_u.png.meta": {
+      "time": 1795431410433.2642
+    },
+    "resources\\textures\\lc_v.png.meta": {
+      "time": 1795431410437.247
+    },
+    "resources\\textures\\lc_w.png.meta": {
+      "time": 1795431410443.2307
+    },
+    "resources\\textures\\lc_x.png.meta": {
+      "time": 1795431410452.2068
+    },
+    "resources\\textures\\lc_y.png.meta": {
+      "time": 1795431410467.1672
+    },
+    "resources\\textures\\lc_z.png.meta": {
+      "time": 1795431410474.1582
+    },
+    "resources\\textures\\prop_balloon_arch.png.meta": {
+      "time": 1795431410483.1255
+    },
+    "resources\\textures\\prop_barrier.png.meta": {
+      "time": 1795431410490.1055
+    },
+    "resources\\textures\\prop_bus_shelter.png.meta": {
+      "time": 1795431410491.104
+    },
+    "resources\\textures\\prop_bus_stop_sign.png.meta": {
+      "time": 1795431410514.0422
+    },
+    "resources\\textures\\prop_cone.png.meta": {
+      "time": 1795431410511.0498
+    },
+    "resources\\textures\\prop_cone_pair.png.meta": {
+      "time": 1795431410529.0022
+    },
+    "resources\\textures\\prop_cow_road.png.meta": {
+      "time": 1795431410541.9673
+    },
+    "resources\\textures\\prop_crossing_sign.png.meta": {
+      "time": 1795431410532.9907
+    },
+    "resources\\textures\\prop_duck_family.png.meta": {
+      "time": 1795431410556.927
+    },
+    "resources\\textures\\prop_finish_arch.png.meta": {
+      "time": 1795431410552.9373
+    },
+    "resources\\textures\\prop_hay.png.meta": {
+      "time": 1795431410567.8975
+    },
+    "resources\\textures\\prop_light_green.png.meta": {
+      "time": 1795431410578.8682
+    },
+    "resources\\textures\\prop_light_off.png.meta": {
+      "time": 1795431410581.8606
+    },
+    "resources\\textures\\prop_light_red.png.meta": {
+      "time": 1795431410600.8098
+    },
+    "resources\\textures\\prop_light_yellow.png.meta": {
+      "time": 1795431410594.8245
+    },
+    "resources\\textures\\prop_puddle.png.meta": {
+      "time": 1795431410609.7854
+    },
+    "resources\\textures\\prop_sheep.png.meta": {
+      "time": 1795431410617.7642
+    },
+    "resources\\textures\\prop_speed_bump.png.meta": {
+      "time": 1795431410622.751
+    },
+    "resources\\textures\\prop_star_gate.png.meta": {
+      "time": 1795431410633.7224
+    },
+    "resources\\textures\\prop_stop_sign.png.meta": {
+      "time": 1795431410646.686
+    },
+    "resources\\textures\\sticker_champion.png.meta": {
+      "time": 1795431410649.6836
+    },
+    "resources\\textures\\sticker_driver.png.meta": {
+      "time": 1795431410654.6653
+    },
+    "resources\\textures\\sticker_explorer.png.meta": {
+      "time": 1795431410665.6416
+    },
+    "resources\\textures\\sticker_helper.png.meta": {
+      "time": 1795431410671.62
+    },
+    "resources\\textures\\sticker_perfect.png.meta": {
+      "time": 1795431410685.5857
+    },
+    "resources\\textures\\sticker_speed.png.meta": {
+      "time": 1795431410690.5706
+    },
+    "resources\\textures\\sticker_w1.png.meta": {
+      "time": 1795431410693.5613
+    },
+    "resources\\textures\\sticker_w2.png.meta": {
+      "time": 1795431410705.5286
+    },
+    "resources\\textures\\sticker_w3.png.meta": {
+      "time": 1795431410710.5173
+    },
+    "resources\\textures\\sticker_w4.png.meta": {
+      "time": 1795431410723.4807
+    },
+    "resources\\textures\\sticker_w5.png.meta": {
+      "time": 1795431410727.4702
+    },
+    "resources\\textures\\sticker_words.png.meta": {
+      "time": 1795431410733.4539
+    },
+    "resources\\textures\\ui_garage.png.meta": {
+      "time": 1795431410746.4204
+    },
+    "resources\\textures\\ui_home.png.meta": {
+      "time": 1795431410752.4038
+    },
+    "resources\\textures\\ui_lock.png.meta": {
+      "time": 1795431410767.364
+    },
+    "resources\\textures\\ui_next.png.meta": {
+      "time": 1795431410774.3535
+    },
+    "resources\\textures\\ui_parent.png.meta": {
+      "time": 1795431410778.3347
+    },
+    "resources\\textures\\ui_pause.png.meta": {
+      "time": 1795431410788.3162
+    },
+    "resources\\textures\\ui_play.png.meta": {
+      "time": 1795431410801.273
+    },
+    "resources\\textures\\ui_replay.png.meta": {
+      "time": 1795431410814.2383
+    },
+    "resources\\textures\\ui_settings.png.meta": {
+      "time": 1795431410816.2334
+    },
+    "resources\\textures\\ui_shop.png.meta": {
+      "time": 1795431410825.209
+    },
+    "resources\\textures\\ui_sound_off.png.meta": {
+      "time": 1795431410841.4934
+    },
+    "resources\\textures\\ui_sound_on.png.meta": {
+      "time": 1795431410857.4507
+    },
+    "resources\\textures\\ui_star_grey.png.meta": {
+      "time": 1795431410877.408
+    },
+    "resources\\textures\\ui_sticker_book.png.meta": {
+      "time": 1795431410859.4468
+    },
+    "resources\\textures\\ui_timer.png.meta": {
+      "time": 1795431410868.4214
+    },
+    "resources\\textures\\ui_trophy.png.meta": {
+      "time": 1795431410911.7947
+    },
+    "resources\\textures\\fx_confetti.png": {
+      "time": 1795429745281.8188,
+      "uuid": "3850a6aa-0d0b-4126-a527-e171b19e87b2"
+    },
+    "resources\\textures\\fx_firefly.png": {
+      "time": 1795429746496.1487,
+      "uuid": "310bc2a2-dc99-445b-aee3-b5b464e39fe8"
+    },
+    "resources\\textures\\fx_snowflake.png": {
+      "time": 1795429747106.6787,
+      "uuid": "8ed236af-5a3c-4b5d-931c-58a50d3c126a"
+    },
+    "resources\\textures\\fx_poof.png": {
+      "time": 1795429746431.2944,
+      "uuid": "3f1f00ec-4daa-4979-aa80-4ef3f145f023"
+    },
+    "resources\\textures\\fx_sparkle.png": {
+      "time": 1795429746337.9255,
+      "uuid": "c97c3452-1214-4b48-ad07-65f34576944b"
+    },
+    "resources\\textures\\kid_boy_backpack.png": {
+      "time": 1795431382908.4402,
+      "uuid": "20993478-4610-443b-87c5-58fabe1ec5a1"
+    },
+    "resources\\textures\\kid_boy_glasses.png": {
+      "time": 1795431383351.6367,
+      "uuid": "c0ff3df6-f273-4cfa-964b-d143b2cea246"
+    },
+    "resources\\textures\\kid_girl_pigtails.png": {
+      "time": 1795431384186.4558,
+      "uuid": "5a4cf897-9c99-459c-ae26-58b1f07287be"
+    },
+    "resources\\textures\\kid_girl_curly.png": {
+      "time": 1795431383776.4695,
+      "uuid": "4d2a4c20-90b4-4bd0-9e66-5a650ae76905"
+    },
+    "resources\\textures\\kid_girl_scarf.png": {
+      "time": 1795431384646.0227,
+      "uuid": "2f2d60d6-51de-4b9f-9dba-9e3ef4e6d9cf"
+    },
+    "resources\\textures\\kid_toddler_teddy.png": {
+      "time": 1795431385027.184,
+      "uuid": "de9d50e7-ffff-4a3e-88c0-d3a3fa066688"
+    },
+    "resources\\textures\\lc_a.png": {
+      "time": 1795429655464.3157,
+      "uuid": "32eb2e97-d8b2-47f3-888f-89cb1c40c99d"
+    },
+    "resources\\textures\\lc_b.png": {
+      "time": 1795429655491.2168,
+      "uuid": "d9514a39-8ca9-48d0-83d5-49b7e0e1232a"
+    },
+    "resources\\textures\\lc_c.png": {
+      "time": 1795429655517.8523,
+      "uuid": "47e277ef-4eb5-48f1-9851-313874435e6b"
+    },
+    "resources\\textures\\lc_d.png": {
+      "time": 1795429655545.7778,
+      "uuid": "82dd2d0b-9285-46f7-84fb-6bb14c5a6ae7"
+    },
+    "resources\\textures\\lc_e.png": {
+      "time": 1795429655572.7063,
+      "uuid": "75a9bd25-8fe4-4b23-bb41-0fafb633f258"
+    },
+    "resources\\textures\\lc_f.png": {
+      "time": 1795429655591.6553,
+      "uuid": "04485c0c-40cb-43cf-b094-57aad71078b2"
+    },
+    "resources\\textures\\lc_g.png": {
+      "time": 1795429655622.572,
+      "uuid": "0a4677ed-e461-487a-9587-b48200eeb6f3"
+    },
+    "resources\\textures\\lc_h.png": {
+      "time": 1795429655647.5056,
+      "uuid": "482202b3-7ed1-43cb-a721-045f0dcd2470"
+    },
+    "resources\\textures\\lc_i.png": {
+      "time": 1795429655659.4727,
+      "uuid": "7f7de394-bc1d-47ee-9aa3-da5de5e855e8"
+    },
+    "resources\\textures\\lc_j.png": {
+      "time": 1795429655676.4336,
+      "uuid": "0119e696-efb7-4de1-8598-18a39a20445f"
+    },
+    "resources\\textures\\lc_k.png": {
+      "time": 1795429655702.3582,
+      "uuid": "3ef7f8c6-5734-4306-aa51-18588cbdac1c"
+    },
+    "resources\\textures\\lc_l.png": {
+      "time": 1795429655714.2983,
+      "uuid": "540ca1c7-a95c-4e3c-901c-a6f77629d0a2"
+    },
+    "resources\\textures\\lc_m.png": {
+      "time": 1795429655750.2039,
+      "uuid": "a64a2dfb-94bd-4b96-9c1d-397b49c410d9"
+    },
+    "resources\\textures\\lc_n.png": {
+      "time": 1795429655773.1433,
+      "uuid": "e8242f8a-aea9-45a8-b34b-9cc01310813d"
+    },
+    "resources\\textures\\lc_o.png": {
+      "time": 1795429655800.8494,
+      "uuid": "8c2c156a-afdd-42a8-9f20-994434a5e0b0"
+    },
+    "resources\\textures\\lc_p.png": {
+      "time": 1795429655828.7747,
+      "uuid": "518e498f-c88a-4fd9-a700-b69cdf932222"
+    },
+    "resources\\textures\\lc_q.png": {
+      "time": 1795429655856.675,
+      "uuid": "e962755d-2c0f-474d-841e-39ef2bfa8b83"
+    },
+    "resources\\textures\\lc_r.png": {
+      "time": 1795429655875.623,
+      "uuid": "c868cb26-1263-4033-a6e1-28ddfcc6decf"
+    },
+    "resources\\textures\\lc_s.png": {
+      "time": 1795429655905.5417,
+      "uuid": "4c1544a3-2214-4219-b3a3-524ccabe4320"
+    },
+    "resources\\textures\\lc_t.png": {
+      "time": 1795429655929.4783,
+      "uuid": "eef9da99-487d-47a2-87e9-e30836186d8e"
+    },
+    "resources\\textures\\lc_u.png": {
+      "time": 1795429655957.4036,
+      "uuid": "506df477-62f4-44d6-99d8-f3984cc7fe3e"
+    },
+    "resources\\textures\\lc_v.png": {
+      "time": 1795429655985.329,
+      "uuid": "bc390d67-fed2-4d99-8823-6a9140a71b58"
+    },
+    "resources\\textures\\lc_w.png": {
+      "time": 1795429656024.2246,
+      "uuid": "5a9c810b-5ce4-44a6-ba52-a35f8cd85072"
+    },
+    "resources\\textures\\lc_x.png": {
+      "time": 1795429656050.1545,
+      "uuid": "a3024939-fc1e-437f-aa7a-644d8c7648cd"
+    },
+    "resources\\textures\\lc_y.png": {
+      "time": 1795429656078.108,
+      "uuid": "629b8167-8fdd-4bc7-afea-0b9c9fbc9165"
+    },
+    "resources\\textures\\lc_z.png": {
+      "time": 1795429656099.0515,
+      "uuid": "d75f6f39-21ba-4fe3-91b5-e69342d17776"
+    },
+    "resources\\textures\\prop_balloon_arch.png": {
+      "time": 1795431385459.8662,
+      "uuid": "9a6d76e0-bc28-4987-96ee-80f33e336c13"
+    },
+    "resources\\textures\\prop_barrier.png": {
+      "time": 1795431385829.6082,
+      "uuid": "26b761fe-89b3-4f2d-9f7c-d8055de6f511"
+    },
+    "resources\\textures\\prop_bus_shelter.png": {
+      "time": 1795431386214.5425,
+      "uuid": "99cbcf2b-1f40-4bd3-b249-56c7ede28142"
+    },
+    "resources\\textures\\prop_cone.png": {
+      "time": 1795431386948.6892,
+      "uuid": "97039a3b-13ac-4ec2-8301-86f94b8b7985"
+    },
+    "resources\\textures\\prop_bus_stop_sign.png": {
+      "time": 1795431386582.947,
+      "uuid": "3a26034d-65cc-4883-9d1e-5504e20aabf1"
+    },
+    "resources\\textures\\prop_cone_pair.png": {
+      "time": 1795431387337.2576,
+      "uuid": "104310b6-6ce7-400d-ba1f-9dd6516532cf"
+    },
+    "resources\\textures\\prop_crossing_sign.png": {
+      "time": 1795431388095.0605,
+      "uuid": "e91cba8b-fa53-4efc-87a4-ac44db1e77c3"
+    },
+    "resources\\textures\\prop_cow_road.png": {
+      "time": 1795431387744.284,
+      "uuid": "94ed8c79-3ca5-4efc-93cd-167622e65fc3"
+    },
+    "resources\\textures\\prop_finish_arch.png": {
+      "time": 1795431388909.3655,
+      "uuid": "db454ad9-0ee3-4c11-9755-af916965ad95"
+    },
+    "resources\\textures\\prop_duck_family.png": {
+      "time": 1795431388509.9985,
+      "uuid": "4597a947-7c01-492f-9080-391a2041b2af"
+    },
+    "resources\\textures\\prop_hay.png": {
+      "time": 1795431389323.5095,
+      "uuid": "7c90c4d7-44d3-408f-8534-4d038d39c766"
+    },
+    "resources\\textures\\prop_light_green.png": {
+      "time": 1795429617312.5996,
+      "uuid": "b8ad0f7a-9dc6-4134-b299-59d1efdd3619"
+    },
+    "resources\\textures\\prop_light_off.png": {
+      "time": 1795429618483.4512,
+      "uuid": "30ee9c4e-3aaf-4aa0-aa5e-478e4320d331"
+    },
+    "resources\\textures\\prop_light_yellow.png": {
+      "time": 1795429616006.6074,
+      "uuid": "430ec63e-7ae3-4da9-8fe1-8ce9357af161"
+    },
+    "resources\\textures\\prop_light_red.png": {
+      "time": 1795429614733.4756,
+      "uuid": "cc8dcf7f-476e-448c-9e90-af86a1b18d6c"
+    },
+    "resources\\textures\\prop_puddle.png": {
+      "time": 1795431389714.0835,
+      "uuid": "48596940-1afe-46c8-9e99-ca086d27a9f2"
+    },
+    "resources\\textures\\prop_sheep.png": {
+      "time": 1795431389960.0073,
+      "uuid": "ef7633e4-211c-4ad4-8dac-fc75f28f4310"
+    },
+    "resources\\textures\\prop_speed_bump.png": {
+      "time": 1795429618932.0217,
+      "uuid": "25314b00-882a-468b-b685-e733322a4929"
+    },
+    "resources\\textures\\prop_star_gate.png": {
+      "time": 1795431390380.224,
+      "uuid": "54d2699d-884b-46ff-8e0c-cacd5340763e"
+    },
+    "resources\\textures\\prop_stop_sign.png": {
+      "time": 1795431390749.256,
+      "uuid": "6979ebf6-9cf6-4cf3-9eae-39c8cdea7b3d"
+    },
+    "resources\\textures\\sticker_champion.png": {
+      "time": 1795429688927.311,
+      "uuid": "0ceceadc-e509-415d-afad-5a9c117a19e2"
+    },
+    "resources\\textures\\sticker_driver.png": {
+      "time": 1795429685628.5134,
+      "uuid": "cc99f723-30bd-48e8-8b18-c67938ba43e5"
+    },
+    "resources\\textures\\sticker_explorer.png": {
+      "time": 1795429687614.628,
+      "uuid": "3ed76f1d-890a-4399-9e45-a09f09089d8a"
+    },
+    "resources\\textures\\sticker_helper.png": {
+      "time": 1795429686432.0183,
+      "uuid": "4eccc6a6-aa0e-45d2-b39c-075d3f9d9f42"
+    },
+    "resources\\textures\\sticker_perfect.png": {
+      "time": 1795429682781.853,
+      "uuid": "61d44cc6-85f0-4485-907e-744c2d00bf8c"
+    },
+    "resources\\textures\\sticker_speed.png": {
+      "time": 1795429683420.2249,
+      "uuid": "d5f15f96-e2c2-4788-90d8-4e8db547f178"
+    },
+    "resources\\textures\\sticker_w1.png": {
+      "time": 1795429674442.5789,
+      "uuid": "d8994f93-e5ff-4a84-a5bf-a01e12080d04"
+    },
+    "resources\\textures\\sticker_w2.png": {
+      "time": 1795429675557.1694,
+      "uuid": "1528914b-5664-4454-9384-f05b8e1f2d0a"
+    },
+    "resources\\textures\\sticker_w3.png": {
+      "time": 1795429676754.76,
+      "uuid": "4e442108-f7eb-425d-859f-12d5e3e424e1"
+    },
+    "resources\\textures\\sticker_w4.png": {
+      "time": 1795429678089.6672,
+      "uuid": "4f2e480b-d3de-4173-a431-8d02ac77734e"
+    },
+    "resources\\textures\\sticker_w5.png": {
+      "time": 1795429679781.1746,
+      "uuid": "0f23846a-50ac-4020-9b2c-9c17008b4667"
+    },
+    "resources\\textures\\sticker_words.png": {
+      "time": 1795429684654.9214,
+      "uuid": "ca3c7655-b3c9-45e1-9c3d-caf6ecfc7b44"
+    },
+    "resources\\textures\\ui_garage.png": {
+      "time": 1795429668099.6394,
+      "uuid": "10d084d1-89f5-497a-a667-dfe919bbae1b"
+    },
+    "resources\\textures\\ui_home.png": {
+      "time": 1795429657906.6013,
+      "uuid": "4e801c53-5490-4d28-9033-39e1e4756ef6"
+    },
+    "resources\\textures\\ui_lock.png": {
+      "time": 1795429662741.5752,
+      "uuid": "28642558-2e8c-4b22-b385-c011ad8b0046"
+    },
+    "resources\\textures\\ui_next.png": {
+      "time": 1795429658971.385,
+      "uuid": "cdea9bdd-f1cb-49cb-a836-135b94f5a721"
+    },
+    "resources\\textures\\ui_parent.png": {
+      "time": 1795429662162.7246,
+      "uuid": "bfc71db4-7354-4d77-89f0-7786056d1770"
+    },
+    "resources\\textures\\ui_pause.png": {
+      "time": 1795429656821.932,
+      "uuid": "80b59094-76b8-40f2-bd32-0871d6e8f45d"
+    },
+    "resources\\textures\\ui_play.png": {
+      "time": 1795429657342.7776,
+      "uuid": "263127e8-efe7-420d-84d7-47faf5a5d0ee"
+    },
+    "resources\\textures\\ui_replay.png": {
+      "time": 1795429658446.4941,
+      "uuid": "c69304e9-371f-4ef8-8bbc-6aafd3b50c00"
+    },
+    "resources\\textures\\ui_settings.png": {
+      "time": 1795429661419.0674,
+      "uuid": "511b43d4-edfa-406b-966a-2ff8d836536f"
+    },
+    "resources\\textures\\ui_shop.png": {
+      "time": 1795429666621.4546,
+      "uuid": "ef339651-ca4a-451c-bc72-9d9fdb22d182"
+    },
+    "resources\\textures\\ui_sound_off.png": {
+      "time": 1795429660859.0117,
+      "uuid": "875c181c-01c8-4cb7-b5af-b6ea4bd313c4"
+    },
+    "resources\\textures\\ui_sound_on.png": {
+      "time": 1795429659914.8176,
+      "uuid": "44ae297b-9585-4b9b-b978-c9a4fafc39ae"
+    },
+    "resources\\textures\\ui_sticker_book.png": {
+      "time": 1795429665931.3845,
+      "uuid": "02b8de73-70a7-4278-9ce3-ec9ec1ec6fbe"
+    },
+    "resources\\textures\\ui_timer.png": {
+      "time": 1795429664890.5103,
+      "uuid": "b7cfe112-40a2-4610-8411-aabf6d66c16f"
+    },
+    "resources\\textures\\ui_star_grey.png": {
+      "time": 1795429665147.8198,
+      "uuid": "d0f6a18f-68c7-4f53-9f22-3c203d690e20"
+    },
+    "resources\\textures\\ui_trophy.png": {
+      "time": 1795429663667.5615,
+      "uuid": "1696ac94-fd20-43f5-9e1c-b725e8650e8b"
+    }
+  },
+  "missing": {}
+}

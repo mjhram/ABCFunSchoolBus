@@ -1,0 +1,2133 @@
+{
+  "185ebc1f-0f23-42a3-893d-999e1872991d": {
+    "url": "db://assets/resources",
+    "value": {},
+    "versionCode": 1
+  },
+  "7c1d2a10-3b4e-4f5a-8c9d-0e1f2a3b4c5d": {
+    "url": "db://assets/scripts/GameMain.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "fc476280-cddf-4079-8cc0-6427157bd911": {
+    "url": "db://assets/scenes",
+    "value": {},
+    "versionCode": 1
+  },
+  "4e1eaa42-d801-4bac-8452-adaf9a601dc1": {
+    "url": "db://assets/scripts",
+    "value": {},
+    "versionCode": 1
+  },
+  "4bb24467-3eb9-4999-86a3-be5c6350fc8f": {
+    "url": "db://assets/resources/textures",
+    "value": {},
+    "versionCode": 1
+  },
+  "5e8f9a01-2b3c-4d5e-9f60-71829304a5b6": {
+    "url": "db://assets/scenes/main.scene",
+    "value": {
+      "depends": [],
+      "dependScripts": [
+        "7c1d2a10-3b4e-4f5a-8c9d-0e1f2a3b4c5d"
+      ]
+    },
+    "versionCode": 2
+  },
+  "de4b46c9-6a06-4588-9551-f7a328c843c1": {
+    "url": "db://assets/resources/textures/button_arrow_left.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "17f587f5-7e0b-449b-bef7-6f06a5b72929": {
+    "url": "db://assets/resources/textures/button_arrow_right.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6de216cb-8b8f-4636-969b-a8fa6bfff8e5": {
+    "url": "db://assets/resources/textures/button_brake.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "597418e2-c424-4edc-ab48-ae50f13c8f25": {
+    "url": "db://assets/resources/textures/button_brake_pressed.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "f10910d7-e2e7-46aa-b0e0-b2084fade787": {
+    "url": "db://assets/resources/textures/button_horn.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6de216cb-8b8f-4636-969b-a8fa6bfff8e5@6c48a": {
+    "url": "db://assets/resources/textures/button_brake.png@6c48a",
+    "value": {
+      "depends": [
+        "6de216cb-8b8f-4636-969b-a8fa6bfff8e5"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8a5b68da-ebec-4d31-a769-78fe445c5c0c": {
+    "url": "db://assets/resources/textures/button_horn_pressed.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "17f587f5-7e0b-449b-bef7-6f06a5b72929@6c48a": {
+    "url": "db://assets/resources/textures/button_arrow_right.png@6c48a",
+    "value": {
+      "depends": [
+        "17f587f5-7e0b-449b-bef7-6f06a5b72929"
+      ]
+    },
+    "versionCode": 1
+  },
+  "de4b46c9-6a06-4588-9551-f7a328c843c1@6c48a": {
+    "url": "db://assets/resources/textures/button_arrow_left.png@6c48a",
+    "value": {
+      "depends": [
+        "de4b46c9-6a06-4588-9551-f7a328c843c1"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c116512e-b4da-4e1e-b5b9-380288bb3258": {
+    "url": "db://assets/resources/textures/dashboard.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d6471b91-0f77-4954-9d74-ca175e52f034": {
+    "url": "db://assets/resources/textures/letter_A.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "597418e2-c424-4edc-ab48-ae50f13c8f25@6c48a": {
+    "url": "db://assets/resources/textures/button_brake_pressed.png@6c48a",
+    "value": {
+      "depends": [
+        "597418e2-c424-4edc-ab48-ae50f13c8f25"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6a161663-890b-40a8-8cbb-3bd58f0b092c": {
+    "url": "db://assets/resources/textures/letter_B.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "f10910d7-e2e7-46aa-b0e0-b2084fade787@6c48a": {
+    "url": "db://assets/resources/textures/button_horn.png@6c48a",
+    "value": {
+      "depends": [
+        "f10910d7-e2e7-46aa-b0e0-b2084fade787"
+      ]
+    },
+    "versionCode": 1
+  },
+  "23408eb5-9ccf-4670-945d-69f09d312f78": {
+    "url": "db://assets/resources/textures/letter_C.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "8a5b68da-ebec-4d31-a769-78fe445c5c0c@6c48a": {
+    "url": "db://assets/resources/textures/button_horn_pressed.png@6c48a",
+    "value": {
+      "depends": [
+        "8a5b68da-ebec-4d31-a769-78fe445c5c0c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1046ce45-071d-4dda-b9b8-53766d910977": {
+    "url": "db://assets/resources/textures/letter_D.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6a161663-890b-40a8-8cbb-3bd58f0b092c@6c48a": {
+    "url": "db://assets/resources/textures/letter_B.png@6c48a",
+    "value": {
+      "depends": [
+        "6a161663-890b-40a8-8cbb-3bd58f0b092c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c116512e-b4da-4e1e-b5b9-380288bb3258@6c48a": {
+    "url": "db://assets/resources/textures/dashboard.png@6c48a",
+    "value": {
+      "depends": [
+        "c116512e-b4da-4e1e-b5b9-380288bb3258"
+      ]
+    },
+    "versionCode": 1
+  },
+  "bb130f70-fda4-45b9-920c-4900fd28a39c": {
+    "url": "db://assets/resources/textures/letter_E.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "14ec47b1-9b64-4392-8ae7-5fd06a2b63fc": {
+    "url": "db://assets/resources/textures/letter_F.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d6471b91-0f77-4954-9d74-ca175e52f034@6c48a": {
+    "url": "db://assets/resources/textures/letter_A.png@6c48a",
+    "value": {
+      "depends": [
+        "d6471b91-0f77-4954-9d74-ca175e52f034"
+      ]
+    },
+    "versionCode": 1
+  },
+  "dbb8cb3f-1b62-46d8-94f2-060f2d389036": {
+    "url": "db://assets/resources/textures/letter_G.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "23408eb5-9ccf-4670-945d-69f09d312f78@6c48a": {
+    "url": "db://assets/resources/textures/letter_C.png@6c48a",
+    "value": {
+      "depends": [
+        "23408eb5-9ccf-4670-945d-69f09d312f78"
+      ]
+    },
+    "versionCode": 1
+  },
+  "75268c94-1083-4b85-a9c1-1835c2c6c8f1": {
+    "url": "db://assets/resources/textures/letter_H.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "1046ce45-071d-4dda-b9b8-53766d910977@6c48a": {
+    "url": "db://assets/resources/textures/letter_D.png@6c48a",
+    "value": {
+      "depends": [
+        "1046ce45-071d-4dda-b9b8-53766d910977"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a8f2b60f-3127-42be-a243-10a8337ddebc": {
+    "url": "db://assets/resources/textures/letter_I.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "14ec47b1-9b64-4392-8ae7-5fd06a2b63fc@6c48a": {
+    "url": "db://assets/resources/textures/letter_F.png@6c48a",
+    "value": {
+      "depends": [
+        "14ec47b1-9b64-4392-8ae7-5fd06a2b63fc"
+      ]
+    },
+    "versionCode": 1
+  },
+  "bb130f70-fda4-45b9-920c-4900fd28a39c@6c48a": {
+    "url": "db://assets/resources/textures/letter_E.png@6c48a",
+    "value": {
+      "depends": [
+        "bb130f70-fda4-45b9-920c-4900fd28a39c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4121a36c-4807-40bd-b187-0b7b2b96bd9b": {
+    "url": "db://assets/resources/textures/letter_J.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0ef6be7c-fab9-4df8-958b-761b0e0007e5": {
+    "url": "db://assets/resources/textures/mascot_puppy.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "dbb8cb3f-1b62-46d8-94f2-060f2d389036@6c48a": {
+    "url": "db://assets/resources/textures/letter_G.png@6c48a",
+    "value": {
+      "depends": [
+        "dbb8cb3f-1b62-46d8-94f2-060f2d389036"
+      ]
+    },
+    "versionCode": 1
+  },
+  "532e7b18-8c04-4e41-b239-def053bc4d65": {
+    "url": "db://assets/resources/textures/progressbar_frame.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "75268c94-1083-4b85-a9c1-1835c2c6c8f1@6c48a": {
+    "url": "db://assets/resources/textures/letter_H.png@6c48a",
+    "value": {
+      "depends": [
+        "75268c94-1083-4b85-a9c1-1835c2c6c8f1"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5948c67e-7217-42bd-95ae-ab56c6a2b9d7": {
+    "url": "db://assets/resources/textures/rearview_mirror.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0ef6be7c-fab9-4df8-958b-761b0e0007e5@6c48a": {
+    "url": "db://assets/resources/textures/mascot_puppy.png@6c48a",
+    "value": {
+      "depends": [
+        "0ef6be7c-fab9-4df8-958b-761b0e0007e5"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4121a36c-4807-40bd-b187-0b7b2b96bd9b@6c48a": {
+    "url": "db://assets/resources/textures/letter_J.png@6c48a",
+    "value": {
+      "depends": [
+        "4121a36c-4807-40bd-b187-0b7b2b96bd9b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "fbcb874c-e116-4b00-8fd2-e6234eb4df40": {
+    "url": "db://assets/resources/textures/road_tile.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "812b8ac6-a4fc-46e2-ac23-445d7195eca0": {
+    "url": "db://assets/resources/textures/scenery_houses.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "a8f2b60f-3127-42be-a243-10a8337ddebc@6c48a": {
+    "url": "db://assets/resources/textures/letter_I.png@6c48a",
+    "value": {
+      "depends": [
+        "a8f2b60f-3127-42be-a243-10a8337ddebc"
+      ]
+    },
+    "versionCode": 1
+  },
+  "532e7b18-8c04-4e41-b239-def053bc4d65@6c48a": {
+    "url": "db://assets/resources/textures/progressbar_frame.png@6c48a",
+    "value": {
+      "depends": [
+        "532e7b18-8c04-4e41-b239-def053bc4d65"
+      ]
+    },
+    "versionCode": 1
+  },
+  "821c4188-709c-455a-afe9-9a268aea5c4b": {
+    "url": "db://assets/resources/textures/scenery_trees.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "1ba46c89-c4ed-44ce-80b5-9a513320cca5": {
+    "url": "db://assets/resources/textures/speech_bubble.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5948c67e-7217-42bd-95ae-ab56c6a2b9d7@6c48a": {
+    "url": "db://assets/resources/textures/rearview_mirror.png@6c48a",
+    "value": {
+      "depends": [
+        "5948c67e-7217-42bd-95ae-ab56c6a2b9d7"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e4b4dc05-8376-4aae-9935-31a759487e72": {
+    "url": "db://assets/resources/textures/speedometer.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "fbcb874c-e116-4b00-8fd2-e6234eb4df40@6c48a": {
+    "url": "db://assets/resources/textures/road_tile.png@6c48a",
+    "value": {
+      "depends": [
+        "fbcb874c-e116-4b00-8fd2-e6234eb4df40"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9b011140-9812-41fd-a3f0-ea0acd6e605d": {
+    "url": "db://assets/resources/textures/star_golden.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "812b8ac6-a4fc-46e2-ac23-445d7195eca0@6c48a": {
+    "url": "db://assets/resources/textures/scenery_houses.png@6c48a",
+    "value": {
+      "depends": [
+        "812b8ac6-a4fc-46e2-ac23-445d7195eca0"
+      ]
+    },
+    "versionCode": 1
+  },
+  "47f02583-0b27-4077-89da-066c003fb1d6": {
+    "url": "db://assets/resources/textures/steering_wheel.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "1ba46c89-c4ed-44ce-80b5-9a513320cca5@6c48a": {
+    "url": "db://assets/resources/textures/speech_bubble.png@6c48a",
+    "value": {
+      "depends": [
+        "1ba46c89-c4ed-44ce-80b5-9a513320cca5"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e20d5775-934f-4b2f-9daf-6d041abae56d": {
+    "url": "db://assets/resources/textures/traffic_ice_cream_van.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "821c4188-709c-455a-afe9-9a268aea5c4b@6c48a": {
+    "url": "db://assets/resources/textures/scenery_trees.png@6c48a",
+    "value": {
+      "depends": [
+        "821c4188-709c-455a-afe9-9a268aea5c4b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c2ee14bc-ab6a-44fb-b3b5-f7c187532329": {
+    "url": "db://assets/resources/textures/vfx_smoke_puff.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "e4b4dc05-8376-4aae-9935-31a759487e72@6c48a": {
+    "url": "db://assets/resources/textures/speedometer.png@6c48a",
+    "value": {
+      "depends": [
+        "e4b4dc05-8376-4aae-9935-31a759487e72"
+      ]
+    },
+    "versionCode": 1
+  },
+  "76fb1235-e1f2-4610-8126-76391193e187": {
+    "url": "db://assets/resources/textures/vfx_star_burst.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "47f02583-0b27-4077-89da-066c003fb1d6@6c48a": {
+    "url": "db://assets/resources/textures/steering_wheel.png@6c48a",
+    "value": {
+      "depends": [
+        "47f02583-0b27-4077-89da-066c003fb1d6"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9b011140-9812-41fd-a3f0-ea0acd6e605d@6c48a": {
+    "url": "db://assets/resources/textures/star_golden.png@6c48a",
+    "value": {
+      "depends": [
+        "9b011140-9812-41fd-a3f0-ea0acd6e605d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e20d5775-934f-4b2f-9daf-6d041abae56d@6c48a": {
+    "url": "db://assets/resources/textures/traffic_ice_cream_van.png@6c48a",
+    "value": {
+      "depends": [
+        "e20d5775-934f-4b2f-9daf-6d041abae56d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c2ee14bc-ab6a-44fb-b3b5-f7c187532329@6c48a": {
+    "url": "db://assets/resources/textures/vfx_smoke_puff.png@6c48a",
+    "value": {
+      "depends": [
+        "c2ee14bc-ab6a-44fb-b3b5-f7c187532329"
+      ]
+    },
+    "versionCode": 1
+  },
+  "76fb1235-e1f2-4610-8126-76391193e187@6c48a": {
+    "url": "db://assets/resources/textures/vfx_star_burst.png@6c48a",
+    "value": {
+      "depends": [
+        "76fb1235-e1f2-4610-8126-76391193e187"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5f94ab20-c56d-4c0c-b429-bab0730a9741": {
+    "url": "db://assets/resources/textures/letter_K.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "706b7e38-6da7-41d0-98dc-1c7703e38e04": {
+    "url": "db://assets/resources/textures/letter_L.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9f8aea98-eace-4638-83ef-b62286c7a322": {
+    "url": "db://assets/resources/textures/letter_M.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6c48d0bc-41cf-4d68-95e4-af7c01b21f01": {
+    "url": "db://assets/resources/textures/letter_N.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c5e5c710-9c3a-4c18-8279-7e5cae8eca05": {
+    "url": "db://assets/resources/textures/letter_O.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6c48d0bc-41cf-4d68-95e4-af7c01b21f01@6c48a": {
+    "url": "db://assets/resources/textures/letter_N.png@6c48a",
+    "value": {
+      "depends": [
+        "6c48d0bc-41cf-4d68-95e4-af7c01b21f01"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d8cfa1b3-7e35-4ffb-9319-e5548d8367a0": {
+    "url": "db://assets/resources/textures/letter_P.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9f8aea98-eace-4638-83ef-b62286c7a322@6c48a": {
+    "url": "db://assets/resources/textures/letter_M.png@6c48a",
+    "value": {
+      "depends": [
+        "9f8aea98-eace-4638-83ef-b62286c7a322"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5d63ca44-4090-4033-b307-2eb9294eeb4c": {
+    "url": "db://assets/resources/textures/letter_Q.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "706b7e38-6da7-41d0-98dc-1c7703e38e04@6c48a": {
+    "url": "db://assets/resources/textures/letter_L.png@6c48a",
+    "value": {
+      "depends": [
+        "706b7e38-6da7-41d0-98dc-1c7703e38e04"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5f94ab20-c56d-4c0c-b429-bab0730a9741@6c48a": {
+    "url": "db://assets/resources/textures/letter_K.png@6c48a",
+    "value": {
+      "depends": [
+        "5f94ab20-c56d-4c0c-b429-bab0730a9741"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d89aa14b-cdb4-47b0-8727-3bf2478aee79": {
+    "url": "db://assets/resources/textures/letter_R.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "33e4df34-dbed-4a50-b954-1d9ab2fad070": {
+    "url": "db://assets/resources/textures/letter_S.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c5e5c710-9c3a-4c18-8279-7e5cae8eca05@6c48a": {
+    "url": "db://assets/resources/textures/letter_O.png@6c48a",
+    "value": {
+      "depends": [
+        "c5e5c710-9c3a-4c18-8279-7e5cae8eca05"
+      ]
+    },
+    "versionCode": 1
+  },
+  "58649b1a-2e9c-49e3-9842-08f1ca5410c4": {
+    "url": "db://assets/resources/textures/letter_T.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d8cfa1b3-7e35-4ffb-9319-e5548d8367a0@6c48a": {
+    "url": "db://assets/resources/textures/letter_P.png@6c48a",
+    "value": {
+      "depends": [
+        "d8cfa1b3-7e35-4ffb-9319-e5548d8367a0"
+      ]
+    },
+    "versionCode": 1
+  },
+  "57e9916d-6ed9-4273-a923-1d52e83ca9d1": {
+    "url": "db://assets/resources/textures/letter_U.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d89aa14b-cdb4-47b0-8727-3bf2478aee79@6c48a": {
+    "url": "db://assets/resources/textures/letter_R.png@6c48a",
+    "value": {
+      "depends": [
+        "d89aa14b-cdb4-47b0-8727-3bf2478aee79"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0bfee61a-886a-4301-ac78-652bd5379cf4": {
+    "url": "db://assets/resources/textures/letter_V.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "58649b1a-2e9c-49e3-9842-08f1ca5410c4@6c48a": {
+    "url": "db://assets/resources/textures/letter_T.png@6c48a",
+    "value": {
+      "depends": [
+        "58649b1a-2e9c-49e3-9842-08f1ca5410c4"
+      ]
+    },
+    "versionCode": 1
+  },
+  "33e4df34-dbed-4a50-b954-1d9ab2fad070@6c48a": {
+    "url": "db://assets/resources/textures/letter_S.png@6c48a",
+    "value": {
+      "depends": [
+        "33e4df34-dbed-4a50-b954-1d9ab2fad070"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0fbb4c49-d9fb-4a20-a523-9460a1f0adae": {
+    "url": "db://assets/resources/textures/letter_W.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9d1c59e3-9a49-447a-b397-ad298c0a2b34": {
+    "url": "db://assets/resources/textures/letter_X.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "57e9916d-6ed9-4273-a923-1d52e83ca9d1@6c48a": {
+    "url": "db://assets/resources/textures/letter_U.png@6c48a",
+    "value": {
+      "depends": [
+        "57e9916d-6ed9-4273-a923-1d52e83ca9d1"
+      ]
+    },
+    "versionCode": 1
+  },
+  "104b0697-1f62-479d-bc07-5ede91333dc4": {
+    "url": "db://assets/resources/textures/letter_Y.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9d1c59e3-9a49-447a-b397-ad298c0a2b34@6c48a": {
+    "url": "db://assets/resources/textures/letter_X.png@6c48a",
+    "value": {
+      "depends": [
+        "9d1c59e3-9a49-447a-b397-ad298c0a2b34"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4bd91bd3-2bd7-4199-922c-8136beab2701": {
+    "url": "db://assets/resources/textures/letter_Z.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0fbb4c49-d9fb-4a20-a523-9460a1f0adae@6c48a": {
+    "url": "db://assets/resources/textures/letter_W.png@6c48a",
+    "value": {
+      "depends": [
+        "0fbb4c49-d9fb-4a20-a523-9460a1f0adae"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5d63ca44-4090-4033-b307-2eb9294eeb4c@6c48a": {
+    "url": "db://assets/resources/textures/letter_Q.png@6c48a",
+    "value": {
+      "depends": [
+        "5d63ca44-4090-4033-b307-2eb9294eeb4c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "104b0697-1f62-479d-bc07-5ede91333dc4@6c48a": {
+    "url": "db://assets/resources/textures/letter_Y.png@6c48a",
+    "value": {
+      "depends": [
+        "104b0697-1f62-479d-bc07-5ede91333dc4"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0bfee61a-886a-4301-ac78-652bd5379cf4@6c48a": {
+    "url": "db://assets/resources/textures/letter_V.png@6c48a",
+    "value": {
+      "depends": [
+        "0bfee61a-886a-4301-ac78-652bd5379cf4"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4bd91bd3-2bd7-4199-922c-8136beab2701@6c48a": {
+    "url": "db://assets/resources/textures/letter_Z.png@6c48a",
+    "value": {
+      "depends": [
+        "4bd91bd3-2bd7-4199-922c-8136beab2701"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3850a6aa-0d0b-4126-a527-e171b19e87b2": {
+    "url": "db://assets/resources/textures/fx_confetti.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "310bc2a2-dc99-445b-aee3-b5b464e39fe8": {
+    "url": "db://assets/resources/textures/fx_firefly.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "3f1f00ec-4daa-4979-aa80-4ef3f145f023": {
+    "url": "db://assets/resources/textures/fx_poof.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "8ed236af-5a3c-4b5d-931c-58a50d3c126a": {
+    "url": "db://assets/resources/textures/fx_snowflake.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c97c3452-1214-4b48-ad07-65f34576944b": {
+    "url": "db://assets/resources/textures/fx_sparkle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "3850a6aa-0d0b-4126-a527-e171b19e87b2@6c48a": {
+    "url": "db://assets/resources/textures/fx_confetti.png@6c48a",
+    "value": {
+      "depends": [
+        "3850a6aa-0d0b-4126-a527-e171b19e87b2"
+      ]
+    },
+    "versionCode": 1
+  },
+  "20993478-4610-443b-87c5-58fabe1ec5a1": {
+    "url": "db://assets/resources/textures/kid_boy_backpack.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "310bc2a2-dc99-445b-aee3-b5b464e39fe8@6c48a": {
+    "url": "db://assets/resources/textures/fx_firefly.png@6c48a",
+    "value": {
+      "depends": [
+        "310bc2a2-dc99-445b-aee3-b5b464e39fe8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c0ff3df6-f273-4cfa-964b-d143b2cea246": {
+    "url": "db://assets/resources/textures/kid_boy_glasses.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "8ed236af-5a3c-4b5d-931c-58a50d3c126a@6c48a": {
+    "url": "db://assets/resources/textures/fx_snowflake.png@6c48a",
+    "value": {
+      "depends": [
+        "8ed236af-5a3c-4b5d-931c-58a50d3c126a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3f1f00ec-4daa-4979-aa80-4ef3f145f023@6c48a": {
+    "url": "db://assets/resources/textures/fx_poof.png@6c48a",
+    "value": {
+      "depends": [
+        "3f1f00ec-4daa-4979-aa80-4ef3f145f023"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4d2a4c20-90b4-4bd0-9e66-5a650ae76905": {
+    "url": "db://assets/resources/textures/kid_girl_curly.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5a4cf897-9c99-459c-ae26-58b1f07287be": {
+    "url": "db://assets/resources/textures/kid_girl_pigtails.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c97c3452-1214-4b48-ad07-65f34576944b@6c48a": {
+    "url": "db://assets/resources/textures/fx_sparkle.png@6c48a",
+    "value": {
+      "depends": [
+        "c97c3452-1214-4b48-ad07-65f34576944b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "2f2d60d6-51de-4b9f-9dba-9e3ef4e6d9cf": {
+    "url": "db://assets/resources/textures/kid_girl_scarf.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "20993478-4610-443b-87c5-58fabe1ec5a1@6c48a": {
+    "url": "db://assets/resources/textures/kid_boy_backpack.png@6c48a",
+    "value": {
+      "depends": [
+        "20993478-4610-443b-87c5-58fabe1ec5a1"
+      ]
+    },
+    "versionCode": 1
+  },
+  "de9d50e7-ffff-4a3e-88c0-d3a3fa066688": {
+    "url": "db://assets/resources/textures/kid_toddler_teddy.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c0ff3df6-f273-4cfa-964b-d143b2cea246@6c48a": {
+    "url": "db://assets/resources/textures/kid_boy_glasses.png@6c48a",
+    "value": {
+      "depends": [
+        "c0ff3df6-f273-4cfa-964b-d143b2cea246"
+      ]
+    },
+    "versionCode": 1
+  },
+  "32eb2e97-d8b2-47f3-888f-89cb1c40c99d": {
+    "url": "db://assets/resources/textures/lc_a.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5a4cf897-9c99-459c-ae26-58b1f07287be@6c48a": {
+    "url": "db://assets/resources/textures/kid_girl_pigtails.png@6c48a",
+    "value": {
+      "depends": [
+        "5a4cf897-9c99-459c-ae26-58b1f07287be"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d9514a39-8ca9-48d0-83d5-49b7e0e1232a": {
+    "url": "db://assets/resources/textures/lc_b.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "4d2a4c20-90b4-4bd0-9e66-5a650ae76905@6c48a": {
+    "url": "db://assets/resources/textures/kid_girl_curly.png@6c48a",
+    "value": {
+      "depends": [
+        "4d2a4c20-90b4-4bd0-9e66-5a650ae76905"
+      ]
+    },
+    "versionCode": 1
+  },
+  "2f2d60d6-51de-4b9f-9dba-9e3ef4e6d9cf@6c48a": {
+    "url": "db://assets/resources/textures/kid_girl_scarf.png@6c48a",
+    "value": {
+      "depends": [
+        "2f2d60d6-51de-4b9f-9dba-9e3ef4e6d9cf"
+      ]
+    },
+    "versionCode": 1
+  },
+  "47e277ef-4eb5-48f1-9851-313874435e6b": {
+    "url": "db://assets/resources/textures/lc_c.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "82dd2d0b-9285-46f7-84fb-6bb14c5a6ae7": {
+    "url": "db://assets/resources/textures/lc_d.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "de9d50e7-ffff-4a3e-88c0-d3a3fa066688@6c48a": {
+    "url": "db://assets/resources/textures/kid_toddler_teddy.png@6c48a",
+    "value": {
+      "depends": [
+        "de9d50e7-ffff-4a3e-88c0-d3a3fa066688"
+      ]
+    },
+    "versionCode": 1
+  },
+  "75a9bd25-8fe4-4b23-bb41-0fafb633f258": {
+    "url": "db://assets/resources/textures/lc_e.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "32eb2e97-d8b2-47f3-888f-89cb1c40c99d@6c48a": {
+    "url": "db://assets/resources/textures/lc_a.png@6c48a",
+    "value": {
+      "depends": [
+        "32eb2e97-d8b2-47f3-888f-89cb1c40c99d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "04485c0c-40cb-43cf-b094-57aad71078b2": {
+    "url": "db://assets/resources/textures/lc_f.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d9514a39-8ca9-48d0-83d5-49b7e0e1232a@6c48a": {
+    "url": "db://assets/resources/textures/lc_b.png@6c48a",
+    "value": {
+      "depends": [
+        "d9514a39-8ca9-48d0-83d5-49b7e0e1232a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0a4677ed-e461-487a-9587-b48200eeb6f3": {
+    "url": "db://assets/resources/textures/lc_g.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "47e277ef-4eb5-48f1-9851-313874435e6b@6c48a": {
+    "url": "db://assets/resources/textures/lc_c.png@6c48a",
+    "value": {
+      "depends": [
+        "47e277ef-4eb5-48f1-9851-313874435e6b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "482202b3-7ed1-43cb-a721-045f0dcd2470": {
+    "url": "db://assets/resources/textures/lc_h.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "82dd2d0b-9285-46f7-84fb-6bb14c5a6ae7@6c48a": {
+    "url": "db://assets/resources/textures/lc_d.png@6c48a",
+    "value": {
+      "depends": [
+        "82dd2d0b-9285-46f7-84fb-6bb14c5a6ae7"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7f7de394-bc1d-47ee-9aa3-da5de5e855e8": {
+    "url": "db://assets/resources/textures/lc_i.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "75a9bd25-8fe4-4b23-bb41-0fafb633f258@6c48a": {
+    "url": "db://assets/resources/textures/lc_e.png@6c48a",
+    "value": {
+      "depends": [
+        "75a9bd25-8fe4-4b23-bb41-0fafb633f258"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0119e696-efb7-4de1-8598-18a39a20445f": {
+    "url": "db://assets/resources/textures/lc_j.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "04485c0c-40cb-43cf-b094-57aad71078b2@6c48a": {
+    "url": "db://assets/resources/textures/lc_f.png@6c48a",
+    "value": {
+      "depends": [
+        "04485c0c-40cb-43cf-b094-57aad71078b2"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3ef7f8c6-5734-4306-aa51-18588cbdac1c": {
+    "url": "db://assets/resources/textures/lc_k.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0a4677ed-e461-487a-9587-b48200eeb6f3@6c48a": {
+    "url": "db://assets/resources/textures/lc_g.png@6c48a",
+    "value": {
+      "depends": [
+        "0a4677ed-e461-487a-9587-b48200eeb6f3"
+      ]
+    },
+    "versionCode": 1
+  },
+  "482202b3-7ed1-43cb-a721-045f0dcd2470@6c48a": {
+    "url": "db://assets/resources/textures/lc_h.png@6c48a",
+    "value": {
+      "depends": [
+        "482202b3-7ed1-43cb-a721-045f0dcd2470"
+      ]
+    },
+    "versionCode": 1
+  },
+  "540ca1c7-a95c-4e3c-901c-a6f77629d0a2": {
+    "url": "db://assets/resources/textures/lc_l.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "a64a2dfb-94bd-4b96-9c1d-397b49c410d9": {
+    "url": "db://assets/resources/textures/lc_m.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "7f7de394-bc1d-47ee-9aa3-da5de5e855e8@6c48a": {
+    "url": "db://assets/resources/textures/lc_i.png@6c48a",
+    "value": {
+      "depends": [
+        "7f7de394-bc1d-47ee-9aa3-da5de5e855e8"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e8242f8a-aea9-45a8-b34b-9cc01310813d": {
+    "url": "db://assets/resources/textures/lc_n.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0119e696-efb7-4de1-8598-18a39a20445f@6c48a": {
+    "url": "db://assets/resources/textures/lc_j.png@6c48a",
+    "value": {
+      "depends": [
+        "0119e696-efb7-4de1-8598-18a39a20445f"
+      ]
+    },
+    "versionCode": 1
+  },
+  "8c2c156a-afdd-42a8-9f20-994434a5e0b0": {
+    "url": "db://assets/resources/textures/lc_o.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "3ef7f8c6-5734-4306-aa51-18588cbdac1c@6c48a": {
+    "url": "db://assets/resources/textures/lc_k.png@6c48a",
+    "value": {
+      "depends": [
+        "3ef7f8c6-5734-4306-aa51-18588cbdac1c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "518e498f-c88a-4fd9-a700-b69cdf932222": {
+    "url": "db://assets/resources/textures/lc_p.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "540ca1c7-a95c-4e3c-901c-a6f77629d0a2@6c48a": {
+    "url": "db://assets/resources/textures/lc_l.png@6c48a",
+    "value": {
+      "depends": [
+        "540ca1c7-a95c-4e3c-901c-a6f77629d0a2"
+      ]
+    },
+    "versionCode": 1
+  },
+  "e962755d-2c0f-474d-841e-39ef2bfa8b83": {
+    "url": "db://assets/resources/textures/lc_q.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "a64a2dfb-94bd-4b96-9c1d-397b49c410d9@6c48a": {
+    "url": "db://assets/resources/textures/lc_m.png@6c48a",
+    "value": {
+      "depends": [
+        "a64a2dfb-94bd-4b96-9c1d-397b49c410d9"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c868cb26-1263-4033-a6e1-28ddfcc6decf": {
+    "url": "db://assets/resources/textures/lc_r.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "e8242f8a-aea9-45a8-b34b-9cc01310813d@6c48a": {
+    "url": "db://assets/resources/textures/lc_n.png@6c48a",
+    "value": {
+      "depends": [
+        "e8242f8a-aea9-45a8-b34b-9cc01310813d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4c1544a3-2214-4219-b3a3-524ccabe4320": {
+    "url": "db://assets/resources/textures/lc_s.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "8c2c156a-afdd-42a8-9f20-994434a5e0b0@6c48a": {
+    "url": "db://assets/resources/textures/lc_o.png@6c48a",
+    "value": {
+      "depends": [
+        "8c2c156a-afdd-42a8-9f20-994434a5e0b0"
+      ]
+    },
+    "versionCode": 1
+  },
+  "eef9da99-487d-47a2-87e9-e30836186d8e": {
+    "url": "db://assets/resources/textures/lc_t.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "518e498f-c88a-4fd9-a700-b69cdf932222@6c48a": {
+    "url": "db://assets/resources/textures/lc_p.png@6c48a",
+    "value": {
+      "depends": [
+        "518e498f-c88a-4fd9-a700-b69cdf932222"
+      ]
+    },
+    "versionCode": 1
+  },
+  "506df477-62f4-44d6-99d8-f3984cc7fe3e": {
+    "url": "db://assets/resources/textures/lc_u.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "e962755d-2c0f-474d-841e-39ef2bfa8b83@6c48a": {
+    "url": "db://assets/resources/textures/lc_q.png@6c48a",
+    "value": {
+      "depends": [
+        "e962755d-2c0f-474d-841e-39ef2bfa8b83"
+      ]
+    },
+    "versionCode": 1
+  },
+  "bc390d67-fed2-4d99-8823-6a9140a71b58": {
+    "url": "db://assets/resources/textures/lc_v.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c868cb26-1263-4033-a6e1-28ddfcc6decf@6c48a": {
+    "url": "db://assets/resources/textures/lc_r.png@6c48a",
+    "value": {
+      "depends": [
+        "c868cb26-1263-4033-a6e1-28ddfcc6decf"
+      ]
+    },
+    "versionCode": 1
+  },
+  "5a9c810b-5ce4-44a6-ba52-a35f8cd85072": {
+    "url": "db://assets/resources/textures/lc_w.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "4c1544a3-2214-4219-b3a3-524ccabe4320@6c48a": {
+    "url": "db://assets/resources/textures/lc_s.png@6c48a",
+    "value": {
+      "depends": [
+        "4c1544a3-2214-4219-b3a3-524ccabe4320"
+      ]
+    },
+    "versionCode": 1
+  },
+  "a3024939-fc1e-437f-aa7a-644d8c7648cd": {
+    "url": "db://assets/resources/textures/lc_x.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "eef9da99-487d-47a2-87e9-e30836186d8e@6c48a": {
+    "url": "db://assets/resources/textures/lc_t.png@6c48a",
+    "value": {
+      "depends": [
+        "eef9da99-487d-47a2-87e9-e30836186d8e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "629b8167-8fdd-4bc7-afea-0b9c9fbc9165": {
+    "url": "db://assets/resources/textures/lc_y.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "506df477-62f4-44d6-99d8-f3984cc7fe3e@6c48a": {
+    "url": "db://assets/resources/textures/lc_u.png@6c48a",
+    "value": {
+      "depends": [
+        "506df477-62f4-44d6-99d8-f3984cc7fe3e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d75f6f39-21ba-4fe3-91b5-e69342d17776": {
+    "url": "db://assets/resources/textures/lc_z.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "bc390d67-fed2-4d99-8823-6a9140a71b58@6c48a": {
+    "url": "db://assets/resources/textures/lc_v.png@6c48a",
+    "value": {
+      "depends": [
+        "bc390d67-fed2-4d99-8823-6a9140a71b58"
+      ]
+    },
+    "versionCode": 1
+  },
+  "9a6d76e0-bc28-4987-96ee-80f33e336c13": {
+    "url": "db://assets/resources/textures/prop_balloon_arch.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "5a9c810b-5ce4-44a6-ba52-a35f8cd85072@6c48a": {
+    "url": "db://assets/resources/textures/lc_w.png@6c48a",
+    "value": {
+      "depends": [
+        "5a9c810b-5ce4-44a6-ba52-a35f8cd85072"
+      ]
+    },
+    "versionCode": 1
+  },
+  "26b761fe-89b3-4f2d-9f7c-d8055de6f511": {
+    "url": "db://assets/resources/textures/prop_barrier.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "a3024939-fc1e-437f-aa7a-644d8c7648cd@6c48a": {
+    "url": "db://assets/resources/textures/lc_x.png@6c48a",
+    "value": {
+      "depends": [
+        "a3024939-fc1e-437f-aa7a-644d8c7648cd"
+      ]
+    },
+    "versionCode": 1
+  },
+  "99cbcf2b-1f40-4bd3-b249-56c7ede28142": {
+    "url": "db://assets/resources/textures/prop_bus_shelter.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "629b8167-8fdd-4bc7-afea-0b9c9fbc9165@6c48a": {
+    "url": "db://assets/resources/textures/lc_y.png@6c48a",
+    "value": {
+      "depends": [
+        "629b8167-8fdd-4bc7-afea-0b9c9fbc9165"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3a26034d-65cc-4883-9d1e-5504e20aabf1": {
+    "url": "db://assets/resources/textures/prop_bus_stop_sign.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d75f6f39-21ba-4fe3-91b5-e69342d17776@6c48a": {
+    "url": "db://assets/resources/textures/lc_z.png@6c48a",
+    "value": {
+      "depends": [
+        "d75f6f39-21ba-4fe3-91b5-e69342d17776"
+      ]
+    },
+    "versionCode": 1
+  },
+  "97039a3b-13ac-4ec2-8301-86f94b8b7985": {
+    "url": "db://assets/resources/textures/prop_cone.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "9a6d76e0-bc28-4987-96ee-80f33e336c13@6c48a": {
+    "url": "db://assets/resources/textures/prop_balloon_arch.png@6c48a",
+    "value": {
+      "depends": [
+        "9a6d76e0-bc28-4987-96ee-80f33e336c13"
+      ]
+    },
+    "versionCode": 1
+  },
+  "104310b6-6ce7-400d-ba1f-9dd6516532cf": {
+    "url": "db://assets/resources/textures/prop_cone_pair.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "26b761fe-89b3-4f2d-9f7c-d8055de6f511@6c48a": {
+    "url": "db://assets/resources/textures/prop_barrier.png@6c48a",
+    "value": {
+      "depends": [
+        "26b761fe-89b3-4f2d-9f7c-d8055de6f511"
+      ]
+    },
+    "versionCode": 1
+  },
+  "99cbcf2b-1f40-4bd3-b249-56c7ede28142@6c48a": {
+    "url": "db://assets/resources/textures/prop_bus_shelter.png@6c48a",
+    "value": {
+      "depends": [
+        "99cbcf2b-1f40-4bd3-b249-56c7ede28142"
+      ]
+    },
+    "versionCode": 1
+  },
+  "94ed8c79-3ca5-4efc-93cd-167622e65fc3": {
+    "url": "db://assets/resources/textures/prop_cow_road.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "e91cba8b-fa53-4efc-87a4-ac44db1e77c3": {
+    "url": "db://assets/resources/textures/prop_crossing_sign.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "97039a3b-13ac-4ec2-8301-86f94b8b7985@6c48a": {
+    "url": "db://assets/resources/textures/prop_cone.png@6c48a",
+    "value": {
+      "depends": [
+        "97039a3b-13ac-4ec2-8301-86f94b8b7985"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4597a947-7c01-492f-9080-391a2041b2af": {
+    "url": "db://assets/resources/textures/prop_duck_family.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "3a26034d-65cc-4883-9d1e-5504e20aabf1@6c48a": {
+    "url": "db://assets/resources/textures/prop_bus_stop_sign.png@6c48a",
+    "value": {
+      "depends": [
+        "3a26034d-65cc-4883-9d1e-5504e20aabf1"
+      ]
+    },
+    "versionCode": 1
+  },
+  "db454ad9-0ee3-4c11-9755-af916965ad95": {
+    "url": "db://assets/resources/textures/prop_finish_arch.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "104310b6-6ce7-400d-ba1f-9dd6516532cf@6c48a": {
+    "url": "db://assets/resources/textures/prop_cone_pair.png@6c48a",
+    "value": {
+      "depends": [
+        "104310b6-6ce7-400d-ba1f-9dd6516532cf"
+      ]
+    },
+    "versionCode": 1
+  },
+  "7c90c4d7-44d3-408f-8534-4d038d39c766": {
+    "url": "db://assets/resources/textures/prop_hay.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "e91cba8b-fa53-4efc-87a4-ac44db1e77c3@6c48a": {
+    "url": "db://assets/resources/textures/prop_crossing_sign.png@6c48a",
+    "value": {
+      "depends": [
+        "e91cba8b-fa53-4efc-87a4-ac44db1e77c3"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b8ad0f7a-9dc6-4134-b299-59d1efdd3619": {
+    "url": "db://assets/resources/textures/prop_light_green.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "94ed8c79-3ca5-4efc-93cd-167622e65fc3@6c48a": {
+    "url": "db://assets/resources/textures/prop_cow_road.png@6c48a",
+    "value": {
+      "depends": [
+        "94ed8c79-3ca5-4efc-93cd-167622e65fc3"
+      ]
+    },
+    "versionCode": 1
+  },
+  "30ee9c4e-3aaf-4aa0-aa5e-478e4320d331": {
+    "url": "db://assets/resources/textures/prop_light_off.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "db454ad9-0ee3-4c11-9755-af916965ad95@6c48a": {
+    "url": "db://assets/resources/textures/prop_finish_arch.png@6c48a",
+    "value": {
+      "depends": [
+        "db454ad9-0ee3-4c11-9755-af916965ad95"
+      ]
+    },
+    "versionCode": 1
+  },
+  "cc8dcf7f-476e-448c-9e90-af86a1b18d6c": {
+    "url": "db://assets/resources/textures/prop_light_red.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "4597a947-7c01-492f-9080-391a2041b2af@6c48a": {
+    "url": "db://assets/resources/textures/prop_duck_family.png@6c48a",
+    "value": {
+      "depends": [
+        "4597a947-7c01-492f-9080-391a2041b2af"
+      ]
+    },
+    "versionCode": 1
+  },
+  "430ec63e-7ae3-4da9-8fe1-8ce9357af161": {
+    "url": "db://assets/resources/textures/prop_light_yellow.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "7c90c4d7-44d3-408f-8534-4d038d39c766@6c48a": {
+    "url": "db://assets/resources/textures/prop_hay.png@6c48a",
+    "value": {
+      "depends": [
+        "7c90c4d7-44d3-408f-8534-4d038d39c766"
+      ]
+    },
+    "versionCode": 1
+  },
+  "48596940-1afe-46c8-9e99-ca086d27a9f2": {
+    "url": "db://assets/resources/textures/prop_puddle.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "b8ad0f7a-9dc6-4134-b299-59d1efdd3619@6c48a": {
+    "url": "db://assets/resources/textures/prop_light_green.png@6c48a",
+    "value": {
+      "depends": [
+        "b8ad0f7a-9dc6-4134-b299-59d1efdd3619"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ef7633e4-211c-4ad4-8dac-fc75f28f4310": {
+    "url": "db://assets/resources/textures/prop_sheep.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "30ee9c4e-3aaf-4aa0-aa5e-478e4320d331@6c48a": {
+    "url": "db://assets/resources/textures/prop_light_off.png@6c48a",
+    "value": {
+      "depends": [
+        "30ee9c4e-3aaf-4aa0-aa5e-478e4320d331"
+      ]
+    },
+    "versionCode": 1
+  },
+  "25314b00-882a-468b-b685-e733322a4929": {
+    "url": "db://assets/resources/textures/prop_speed_bump.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "430ec63e-7ae3-4da9-8fe1-8ce9357af161@6c48a": {
+    "url": "db://assets/resources/textures/prop_light_yellow.png@6c48a",
+    "value": {
+      "depends": [
+        "430ec63e-7ae3-4da9-8fe1-8ce9357af161"
+      ]
+    },
+    "versionCode": 1
+  },
+  "54d2699d-884b-46ff-8e0c-cacd5340763e": {
+    "url": "db://assets/resources/textures/prop_star_gate.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "cc8dcf7f-476e-448c-9e90-af86a1b18d6c@6c48a": {
+    "url": "db://assets/resources/textures/prop_light_red.png@6c48a",
+    "value": {
+      "depends": [
+        "cc8dcf7f-476e-448c-9e90-af86a1b18d6c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "6979ebf6-9cf6-4cf3-9eae-39c8cdea7b3d": {
+    "url": "db://assets/resources/textures/prop_stop_sign.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "48596940-1afe-46c8-9e99-ca086d27a9f2@6c48a": {
+    "url": "db://assets/resources/textures/prop_puddle.png@6c48a",
+    "value": {
+      "depends": [
+        "48596940-1afe-46c8-9e99-ca086d27a9f2"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0ceceadc-e509-415d-afad-5a9c117a19e2": {
+    "url": "db://assets/resources/textures/sticker_champion.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "ef7633e4-211c-4ad4-8dac-fc75f28f4310@6c48a": {
+    "url": "db://assets/resources/textures/prop_sheep.png@6c48a",
+    "value": {
+      "depends": [
+        "ef7633e4-211c-4ad4-8dac-fc75f28f4310"
+      ]
+    },
+    "versionCode": 1
+  },
+  "cc99f723-30bd-48e8-8b18-c67938ba43e5": {
+    "url": "db://assets/resources/textures/sticker_driver.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "25314b00-882a-468b-b685-e733322a4929@6c48a": {
+    "url": "db://assets/resources/textures/prop_speed_bump.png@6c48a",
+    "value": {
+      "depends": [
+        "25314b00-882a-468b-b685-e733322a4929"
+      ]
+    },
+    "versionCode": 1
+  },
+  "3ed76f1d-890a-4399-9e45-a09f09089d8a": {
+    "url": "db://assets/resources/textures/sticker_explorer.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "54d2699d-884b-46ff-8e0c-cacd5340763e@6c48a": {
+    "url": "db://assets/resources/textures/prop_star_gate.png@6c48a",
+    "value": {
+      "depends": [
+        "54d2699d-884b-46ff-8e0c-cacd5340763e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4eccc6a6-aa0e-45d2-b39c-075d3f9d9f42": {
+    "url": "db://assets/resources/textures/sticker_helper.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "6979ebf6-9cf6-4cf3-9eae-39c8cdea7b3d@6c48a": {
+    "url": "db://assets/resources/textures/prop_stop_sign.png@6c48a",
+    "value": {
+      "depends": [
+        "6979ebf6-9cf6-4cf3-9eae-39c8cdea7b3d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "61d44cc6-85f0-4485-907e-744c2d00bf8c": {
+    "url": "db://assets/resources/textures/sticker_perfect.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0ceceadc-e509-415d-afad-5a9c117a19e2@6c48a": {
+    "url": "db://assets/resources/textures/sticker_champion.png@6c48a",
+    "value": {
+      "depends": [
+        "0ceceadc-e509-415d-afad-5a9c117a19e2"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d5f15f96-e2c2-4788-90d8-4e8db547f178": {
+    "url": "db://assets/resources/textures/sticker_speed.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "cc99f723-30bd-48e8-8b18-c67938ba43e5@6c48a": {
+    "url": "db://assets/resources/textures/sticker_driver.png@6c48a",
+    "value": {
+      "depends": [
+        "cc99f723-30bd-48e8-8b18-c67938ba43e5"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d8994f93-e5ff-4a84-a5bf-a01e12080d04": {
+    "url": "db://assets/resources/textures/sticker_w1.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "3ed76f1d-890a-4399-9e45-a09f09089d8a@6c48a": {
+    "url": "db://assets/resources/textures/sticker_explorer.png@6c48a",
+    "value": {
+      "depends": [
+        "3ed76f1d-890a-4399-9e45-a09f09089d8a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1528914b-5664-4454-9384-f05b8e1f2d0a": {
+    "url": "db://assets/resources/textures/sticker_w2.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "4eccc6a6-aa0e-45d2-b39c-075d3f9d9f42@6c48a": {
+    "url": "db://assets/resources/textures/sticker_helper.png@6c48a",
+    "value": {
+      "depends": [
+        "4eccc6a6-aa0e-45d2-b39c-075d3f9d9f42"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4e442108-f7eb-425d-859f-12d5e3e424e1": {
+    "url": "db://assets/resources/textures/sticker_w3.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "61d44cc6-85f0-4485-907e-744c2d00bf8c@6c48a": {
+    "url": "db://assets/resources/textures/sticker_perfect.png@6c48a",
+    "value": {
+      "depends": [
+        "61d44cc6-85f0-4485-907e-744c2d00bf8c"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4f2e480b-d3de-4173-a431-8d02ac77734e": {
+    "url": "db://assets/resources/textures/sticker_w4.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d5f15f96-e2c2-4788-90d8-4e8db547f178@6c48a": {
+    "url": "db://assets/resources/textures/sticker_speed.png@6c48a",
+    "value": {
+      "depends": [
+        "d5f15f96-e2c2-4788-90d8-4e8db547f178"
+      ]
+    },
+    "versionCode": 1
+  },
+  "0f23846a-50ac-4020-9b2c-9c17008b4667": {
+    "url": "db://assets/resources/textures/sticker_w5.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "d8994f93-e5ff-4a84-a5bf-a01e12080d04@6c48a": {
+    "url": "db://assets/resources/textures/sticker_w1.png@6c48a",
+    "value": {
+      "depends": [
+        "d8994f93-e5ff-4a84-a5bf-a01e12080d04"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ca3c7655-b3c9-45e1-9c3d-caf6ecfc7b44": {
+    "url": "db://assets/resources/textures/sticker_words.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "1528914b-5664-4454-9384-f05b8e1f2d0a@6c48a": {
+    "url": "db://assets/resources/textures/sticker_w2.png@6c48a",
+    "value": {
+      "depends": [
+        "1528914b-5664-4454-9384-f05b8e1f2d0a"
+      ]
+    },
+    "versionCode": 1
+  },
+  "10d084d1-89f5-497a-a667-dfe919bbae1b": {
+    "url": "db://assets/resources/textures/ui_garage.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "4e442108-f7eb-425d-859f-12d5e3e424e1@6c48a": {
+    "url": "db://assets/resources/textures/sticker_w3.png@6c48a",
+    "value": {
+      "depends": [
+        "4e442108-f7eb-425d-859f-12d5e3e424e1"
+      ]
+    },
+    "versionCode": 1
+  },
+  "4e801c53-5490-4d28-9033-39e1e4756ef6": {
+    "url": "db://assets/resources/textures/ui_home.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "4f2e480b-d3de-4173-a431-8d02ac77734e@6c48a": {
+    "url": "db://assets/resources/textures/sticker_w4.png@6c48a",
+    "value": {
+      "depends": [
+        "4f2e480b-d3de-4173-a431-8d02ac77734e"
+      ]
+    },
+    "versionCode": 1
+  },
+  "28642558-2e8c-4b22-b385-c011ad8b0046": {
+    "url": "db://assets/resources/textures/ui_lock.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "0f23846a-50ac-4020-9b2c-9c17008b4667@6c48a": {
+    "url": "db://assets/resources/textures/sticker_w5.png@6c48a",
+    "value": {
+      "depends": [
+        "0f23846a-50ac-4020-9b2c-9c17008b4667"
+      ]
+    },
+    "versionCode": 1
+  },
+  "cdea9bdd-f1cb-49cb-a836-135b94f5a721": {
+    "url": "db://assets/resources/textures/ui_next.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "ca3c7655-b3c9-45e1-9c3d-caf6ecfc7b44@6c48a": {
+    "url": "db://assets/resources/textures/sticker_words.png@6c48a",
+    "value": {
+      "depends": [
+        "ca3c7655-b3c9-45e1-9c3d-caf6ecfc7b44"
+      ]
+    },
+    "versionCode": 1
+  },
+  "bfc71db4-7354-4d77-89f0-7786056d1770": {
+    "url": "db://assets/resources/textures/ui_parent.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "10d084d1-89f5-497a-a667-dfe919bbae1b@6c48a": {
+    "url": "db://assets/resources/textures/ui_garage.png@6c48a",
+    "value": {
+      "depends": [
+        "10d084d1-89f5-497a-a667-dfe919bbae1b"
+      ]
+    },
+    "versionCode": 1
+  },
+  "80b59094-76b8-40f2-bd32-0871d6e8f45d": {
+    "url": "db://assets/resources/textures/ui_pause.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "4e801c53-5490-4d28-9033-39e1e4756ef6@6c48a": {
+    "url": "db://assets/resources/textures/ui_home.png@6c48a",
+    "value": {
+      "depends": [
+        "4e801c53-5490-4d28-9033-39e1e4756ef6"
+      ]
+    },
+    "versionCode": 1
+  },
+  "263127e8-efe7-420d-84d7-47faf5a5d0ee": {
+    "url": "db://assets/resources/textures/ui_play.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "28642558-2e8c-4b22-b385-c011ad8b0046@6c48a": {
+    "url": "db://assets/resources/textures/ui_lock.png@6c48a",
+    "value": {
+      "depends": [
+        "28642558-2e8c-4b22-b385-c011ad8b0046"
+      ]
+    },
+    "versionCode": 1
+  },
+  "c69304e9-371f-4ef8-8bbc-6aafd3b50c00": {
+    "url": "db://assets/resources/textures/ui_replay.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "cdea9bdd-f1cb-49cb-a836-135b94f5a721@6c48a": {
+    "url": "db://assets/resources/textures/ui_next.png@6c48a",
+    "value": {
+      "depends": [
+        "cdea9bdd-f1cb-49cb-a836-135b94f5a721"
+      ]
+    },
+    "versionCode": 1
+  },
+  "511b43d4-edfa-406b-966a-2ff8d836536f": {
+    "url": "db://assets/resources/textures/ui_settings.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "bfc71db4-7354-4d77-89f0-7786056d1770@6c48a": {
+    "url": "db://assets/resources/textures/ui_parent.png@6c48a",
+    "value": {
+      "depends": [
+        "bfc71db4-7354-4d77-89f0-7786056d1770"
+      ]
+    },
+    "versionCode": 1
+  },
+  "ef339651-ca4a-451c-bc72-9d9fdb22d182": {
+    "url": "db://assets/resources/textures/ui_shop.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "80b59094-76b8-40f2-bd32-0871d6e8f45d@6c48a": {
+    "url": "db://assets/resources/textures/ui_pause.png@6c48a",
+    "value": {
+      "depends": [
+        "80b59094-76b8-40f2-bd32-0871d6e8f45d"
+      ]
+    },
+    "versionCode": 1
+  },
+  "875c181c-01c8-4cb7-b5af-b6ea4bd313c4": {
+    "url": "db://assets/resources/textures/ui_sound_off.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "263127e8-efe7-420d-84d7-47faf5a5d0ee@6c48a": {
+    "url": "db://assets/resources/textures/ui_play.png@6c48a",
+    "value": {
+      "depends": [
+        "263127e8-efe7-420d-84d7-47faf5a5d0ee"
+      ]
+    },
+    "versionCode": 1
+  },
+  "44ae297b-9585-4b9b-b978-c9a4fafc39ae": {
+    "url": "db://assets/resources/textures/ui_sound_on.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "c69304e9-371f-4ef8-8bbc-6aafd3b50c00@6c48a": {
+    "url": "db://assets/resources/textures/ui_replay.png@6c48a",
+    "value": {
+      "depends": [
+        "c69304e9-371f-4ef8-8bbc-6aafd3b50c00"
+      ]
+    },
+    "versionCode": 1
+  },
+  "511b43d4-edfa-406b-966a-2ff8d836536f@6c48a": {
+    "url": "db://assets/resources/textures/ui_settings.png@6c48a",
+    "value": {
+      "depends": [
+        "511b43d4-edfa-406b-966a-2ff8d836536f"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d0f6a18f-68c7-4f53-9f22-3c203d690e20": {
+    "url": "db://assets/resources/textures/ui_star_grey.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "02b8de73-70a7-4278-9ce3-ec9ec1ec6fbe": {
+    "url": "db://assets/resources/textures/ui_sticker_book.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "ef339651-ca4a-451c-bc72-9d9fdb22d182@6c48a": {
+    "url": "db://assets/resources/textures/ui_shop.png@6c48a",
+    "value": {
+      "depends": [
+        "ef339651-ca4a-451c-bc72-9d9fdb22d182"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b7cfe112-40a2-4610-8411-aabf6d66c16f": {
+    "url": "db://assets/resources/textures/ui_timer.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "875c181c-01c8-4cb7-b5af-b6ea4bd313c4@6c48a": {
+    "url": "db://assets/resources/textures/ui_sound_off.png@6c48a",
+    "value": {
+      "depends": [
+        "875c181c-01c8-4cb7-b5af-b6ea4bd313c4"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1696ac94-fd20-43f5-9e1c-b725e8650e8b": {
+    "url": "db://assets/resources/textures/ui_trophy.png",
+    "value": {
+      "depends": []
+    },
+    "versionCode": 1
+  },
+  "44ae297b-9585-4b9b-b978-c9a4fafc39ae@6c48a": {
+    "url": "db://assets/resources/textures/ui_sound_on.png@6c48a",
+    "value": {
+      "depends": [
+        "44ae297b-9585-4b9b-b978-c9a4fafc39ae"
+      ]
+    },
+    "versionCode": 1
+  },
+  "02b8de73-70a7-4278-9ce3-ec9ec1ec6fbe@6c48a": {
+    "url": "db://assets/resources/textures/ui_sticker_book.png@6c48a",
+    "value": {
+      "depends": [
+        "02b8de73-70a7-4278-9ce3-ec9ec1ec6fbe"
+      ]
+    },
+    "versionCode": 1
+  },
+  "b7cfe112-40a2-4610-8411-aabf6d66c16f@6c48a": {
+    "url": "db://assets/resources/textures/ui_timer.png@6c48a",
+    "value": {
+      "depends": [
+        "b7cfe112-40a2-4610-8411-aabf6d66c16f"
+      ]
+    },
+    "versionCode": 1
+  },
+  "d0f6a18f-68c7-4f53-9f22-3c203d690e20@6c48a": {
+    "url": "db://assets/resources/textures/ui_star_grey.png@6c48a",
+    "value": {
+      "depends": [
+        "d0f6a18f-68c7-4f53-9f22-3c203d690e20"
+      ]
+    },
+    "versionCode": 1
+  },
+  "1696ac94-fd20-43f5-9e1c-b725e8650e8b@6c48a": {
+    "url": "db://assets/resources/textures/ui_trophy.png@6c48a",
+    "value": {
+      "depends": [
+        "1696ac94-fd20-43f5-9e1c-b725e8650e8b"
+      ]
+    },
+    "versionCode": 1
+  }
+}

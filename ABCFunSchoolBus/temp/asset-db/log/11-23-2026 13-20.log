@@ -1,0 +1,306 @@
+11-23-2026 13:20:31-log: Cannot access game frame or container.
+11-23-2026 13:20:33-debug: asset-db:require-engine-code (2821ms)
+11-23-2026 13:20:33-log: meshopt wasm decoder initialized
+11-23-2026 13:20:33-log: [bullet]:bullet wasm lib loaded.
+11-23-2026 13:20:33-log: [box2d]:box2d wasm lib loaded.
+11-23-2026 13:20:33-log: Cocos Creator v3.8.8
+11-23-2026 13:20:33-log: Using legacy pipeline
+11-23-2026 13:20:33-log: Forward render pipeline initialized.
+11-23-2026 13:20:33-debug: [Assets Memory track]: asset-db:worker-init: initEngine start:30.85MB, end 78.92MB, increase: 48.07MB
+11-23-2026 13:20:39-debug: [Assets Memory track]: asset-db:worker-init: initPlugin start:78.96MB, end 274.19MB, increase: 195.23MB
+11-23-2026 13:20:39-debug: run package(im-plugin) handler(disable) start
+11-23-2026 13:20:39-debug: run package(im-plugin) handler(disable) success!
+11-23-2026 13:20:39-debug: run package(im-plugin) handler(enable) start
+11-23-2026 13:20:39-debug: run package(im-plugin) handler(enable) success!
+11-23-2026 13:20:39-debug: run package(cocos-service) handler(disable) start
+11-23-2026 13:20:39-debug: run package(cocos-service) handler(disable) success!
+11-23-2026 13:20:39-debug: run package(cocos-service) handler(enable) start
+11-23-2026 13:20:39-debug: run package(cocos-service) handler(enable) success!
+11-23-2026 13:20:39-debug: asset-db:worker-init: initPlugin (5976ms)
+11-23-2026 13:20:39-debug: [Assets Memory track]: asset-db:worker-init start:30.84MB, end 274.38MB, increase: 243.53MB
+11-23-2026 13:20:39-debug: Run asset db hook programming:beforePreStart ...
+11-23-2026 13:20:39-debug: Run asset db hook programming:beforePreStart success!
+11-23-2026 13:20:39-debug: Run asset db hook engine-extends:beforePreStart ...
+11-23-2026 13:20:39-debug: Run asset db hook engine-extends:beforePreStart success!
+11-23-2026 13:20:40-debug: asset-db:worker-init (9459ms)
+11-23-2026 13:20:40-debug: asset-db-hook-programming-beforePreStart (247ms)
+11-23-2026 13:20:40-debug: asset-db-hook-engine-extends-beforePreStart (245ms)
+11-23-2026 13:20:40-debug: Preimport db internal success
+11-23-2026 13:20:40-debug: Preimport db assets success
+11-23-2026 13:20:40-debug: Run asset db hook programming:afterPreStart ...
+11-23-2026 13:20:40-debug: starting packer-driver...
+11-23-2026 13:20:41-debug: initialize scripting environment...
+11-23-2026 13:20:41-debug: [[Executor]] prepare before lock
+11-23-2026 13:20:41-debug: Set detail map pack:///resolution-detail-map.json: {}
+11-23-2026 13:20:41-debug: [[Executor]] prepare after unlock
+11-23-2026 13:20:41-debug: Run asset db hook engine-extends:afterPreStart ...
+11-23-2026 13:20:41-debug: Run asset db hook programming:afterPreStart success!
+11-23-2026 13:20:41-debug: Run asset db hook engine-extends:afterPreStart success!
+11-23-2026 13:20:41-debug: Start up the 'internal' database...
+11-23-2026 13:20:42-debug: asset-db-hook-programming-afterPreStart (2096ms)
+11-23-2026 13:20:42-debug: asset-db:worker-effect-data-processing (597ms)
+11-23-2026 13:20:42-debug: asset-db-hook-engine-extends-afterPreStart (599ms)
+11-23-2026 13:20:42-debug: Run asset db hook engine-extends:afterStartDB ...
+11-23-2026 13:20:42-debug: recompile effect.bin success
+11-23-2026 13:20:42-debug: Run asset db hook engine-extends:afterStartDB success!
+11-23-2026 13:20:42-debug: Start up the 'assets' database...
+11-23-2026 13:20:42-debug: asset-db:worker-effect-data-processing (628ms)
+11-23-2026 13:20:43-debug: asset-db-hook-engine-extends-afterStartDB (629ms)
+11-23-2026 13:20:43-debug: Run asset db hook engine-extends:afterStartDB ...
+11-23-2026 13:20:43-debug: recompile effect.bin success
+11-23-2026 13:20:43-debug: Run asset db hook engine-extends:afterStartDB success!
+11-23-2026 13:20:43-debug: lazy register asset handler *
+11-23-2026 13:20:43-debug: lazy register asset handler directory
+11-23-2026 13:20:43-debug: lazy register asset handler text
+11-23-2026 13:20:43-debug: lazy register asset handler json
+11-23-2026 13:20:43-debug: lazy register asset handler spine-data
+11-23-2026 13:20:43-debug: lazy register asset handler dragonbones
+11-23-2026 13:20:43-debug: lazy register asset handler dragonbones-atlas
+11-23-2026 13:20:43-debug: lazy register asset handler terrain
+11-23-2026 13:20:43-debug: lazy register asset handler javascript
+11-23-2026 13:20:43-debug: lazy register asset handler typescript
+11-23-2026 13:20:43-debug: lazy register asset handler scene
+11-23-2026 13:20:43-debug: lazy register asset handler prefab
+11-23-2026 13:20:43-debug: lazy register asset handler sprite-frame
+11-23-2026 13:20:43-debug: lazy register asset handler tiled-map
+11-23-2026 13:20:43-debug: lazy register asset handler buffer
+11-23-2026 13:20:43-debug: lazy register asset handler image
+11-23-2026 13:20:43-debug: lazy register asset handler sign-image
+11-23-2026 13:20:43-debug: lazy register asset handler alpha-image
+11-23-2026 13:20:43-debug: lazy register asset handler texture
+11-23-2026 13:20:43-debug: lazy register asset handler texture-cube
+11-23-2026 13:20:43-debug: lazy register asset handler erp-texture-cube
+11-23-2026 13:20:43-debug: lazy register asset handler render-texture
+11-23-2026 13:20:43-debug: lazy register asset handler texture-cube-face
+11-23-2026 13:20:43-debug: lazy register asset handler rt-sprite-frame
+11-23-2026 13:20:43-debug: lazy register asset handler gltf
+11-23-2026 13:20:43-debug: lazy register asset handler gltf-mesh
+11-23-2026 13:20:43-debug: lazy register asset handler gltf-animation
+11-23-2026 13:20:43-debug: lazy register asset handler gltf-embeded-image
+11-23-2026 13:20:43-debug: lazy register asset handler fbx
+11-23-2026 13:20:43-debug: lazy register asset handler material
+11-23-2026 13:20:43-debug: lazy register asset handler physics-material
+11-23-2026 13:20:43-debug: lazy register asset handler effect
+11-23-2026 13:20:43-debug: lazy register asset handler effect-header
+11-23-2026 13:20:43-debug: lazy register asset handler audio-clip
+11-23-2026 13:20:43-debug: lazy register asset handler animation-clip
+11-23-2026 13:20:43-debug: lazy register asset handler animation-graph
+11-23-2026 13:20:43-debug: lazy register asset handler animation-graph-variant
+11-23-2026 13:20:43-debug: lazy register asset handler animation-mask
+11-23-2026 13:20:43-debug: lazy register asset handler ttf-font
+11-23-2026 13:20:43-debug: lazy register asset handler bitmap-font
+11-23-2026 13:20:43-debug: lazy register asset handler particle
+11-23-2026 13:20:43-debug: lazy register asset handler sprite-atlas
+11-23-2026 13:20:43-debug: lazy register asset handler auto-atlas
+11-23-2026 13:20:43-debug: lazy register asset handler label-atlas
+11-23-2026 13:20:43-debug: lazy register asset handler render-pipeline
+11-23-2026 13:20:43-debug: lazy register asset handler render-stage
+11-23-2026 13:20:43-debug: lazy register asset handler render-flow
+11-23-2026 13:20:43-debug: lazy register asset handler instantiation-material
+11-23-2026 13:20:43-debug: lazy register asset handler instantiation-mesh
+11-23-2026 13:20:43-debug: lazy register asset handler instantiation-skeleton
+11-23-2026 13:20:43-debug: lazy register asset handler instantiation-animation
+11-23-2026 13:20:43-debug: lazy register asset handler video-clip
+11-23-2026 13:20:43-debug: lazy register asset handler gltf-skeleton
+11-23-2026 13:20:43-debug: lazy register asset handler gltf-material
+11-23-2026 13:20:43-debug: lazy register asset handler gltf-scene
+11-23-2026 13:20:43-debug: asset-db:worker-effect-data-processing (572ms)
+11-23-2026 13:20:43-debug: asset-db-hook-engine-extends-afterStartDB (573ms)
+11-23-2026 13:20:43-debug: asset-db:start-database (3806ms)
+11-23-2026 13:20:43-debug: asset-db:ready (19144ms)
+11-23-2026 13:20:43-debug: init worker message success
+11-23-2026 13:20:43-debug: programming:execute-script (15ms)
+11-23-2026 13:20:44-debug: [Build Memory track]: builder:worker-init start:221.42MB, end 231.71MB, increase: 10.30MB
+11-23-2026 13:20:44-debug: builder:worker-init (1069ms)
+11-23-2026 13:21:16-debug: refresh db internal success
+11-23-2026 13:21:16-debug: refresh db assets success
+11-23-2026 13:21:16-debug: Run asset db hook engine-extends:afterRefresh ...
+11-23-2026 13:21:16-debug: Run asset db hook engine-extends:afterRefresh success!
+11-23-2026 13:21:16-debug: asset-db:refresh-all-database (274ms)
+11-23-2026 13:21:16-debug: asset-db:worker-effect-data-processing (4ms)
+11-23-2026 13:21:16-debug: asset-db-hook-engine-extends-afterRefresh (4ms)
+11-23-2026 13:21:18-debug: refresh db internal success
+11-23-2026 13:21:18-debug: refresh db assets success
+11-23-2026 13:21:18-debug: Run asset db hook engine-extends:afterRefresh ...
+11-23-2026 13:21:18-debug: Run asset db hook engine-extends:afterRefresh success!
+11-23-2026 13:21:18-debug: asset-db:worker-effect-data-processing (5ms)
+11-23-2026 13:21:18-debug: asset-db-hook-engine-extends-afterRefresh (6ms)
+11-23-2026 13:21:18-debug: asset-db:refresh-all-database (473ms)
+11-23-2026 13:56:50-debug: refresh db internal success
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\fx_confetti.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\fx_snowflake.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\fx_sparkle.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\fx_firefly.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\fx_poof.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\fx_confetti.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\fx_firefly.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\fx_snowflake.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\fx_poof.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\fx_sparkle.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_boy_backpack.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_boy_glasses.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_girl_curly.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_girl_pigtails.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_girl_scarf.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_boy_backpack.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_boy_glasses.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_girl_pigtails.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_toddler_teddy.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_girl_scarf.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_girl_curly.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_a.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_b.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_c.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_d.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\kid_toddler_teddy.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_a.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_b.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_e.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_c.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_f.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_d.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_g.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_h.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_i.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_e.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_f.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_j.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_g.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_h.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_k.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_i.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_l.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_m.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_n.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_j.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_k.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_o.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_l.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_m.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_p.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_n.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_q.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_r.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_s.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_o.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_p.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_q.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_t.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_r.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_u.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_s.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_v.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_w.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_x.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_t.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_u.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_v.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_y.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_w.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_z.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_balloon_arch.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_x.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_barrier.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_bus_shelter.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_y.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\lc_z.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_bus_stop_sign.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_balloon_arch.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_cone.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_bus_shelter.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_barrier.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_cone_pair.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_cow_road.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_crossing_sign.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_bus_stop_sign.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_cone.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_duck_family.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_finish_arch.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_cone_pair.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_crossing_sign.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_cow_road.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_hay.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_light_green.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_light_off.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_finish_arch.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_duck_family.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_light_red.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_light_yellow.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_hay.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_light_green.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_light_off.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_puddle.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_sheep.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_speed_bump.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_light_yellow.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_light_red.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_star_gate.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_puddle.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_stop_sign.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_sheep.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_champion.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_speed_bump.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_driver.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_explorer.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_star_gate.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_helper.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\prop_stop_sign.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_champion.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_driver.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_perfect.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_speed.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_w1.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_explorer.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_helper.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_w2.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_w3.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_perfect.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_speed.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_w1.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_w4.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_w5.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_words.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_w2.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_w3.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_garage.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_home.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_w4.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_w5.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\sticker_words.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_lock.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_next.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_parent.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_garage.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_home.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_pause.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_play.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_lock.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_next.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_parent.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_replay.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_settings.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_shop.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_pause.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_sound_off.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_play.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_replay.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_settings.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_sound_on.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_shop.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_star_grey.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_sticker_book.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_timer.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_sound_off.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_trophy.pngbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_sound_on.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_sticker_book.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_timer.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_star_grey.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\texturesbackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: %cImport%c: C:\Users\hp2\Downloads\app4\ABCFunSchoolBus\assets\resources\textures\ui_trophy.png@6c48abackground: #aaff85; color: #000;color: #000;
+11-23-2026 13:56:50-debug: refresh db assets success
+11-23-2026 13:56:50-debug: Run asset db hook engine-extends:afterRefresh ...
+11-23-2026 13:56:50-debug: Run asset db hook engine-extends:afterRefresh success!
+11-23-2026 13:56:50-debug: asset-db:refresh-all-database (1157ms)
+11-23-2026 13:56:50-debug: asset-db:worker-effect-data-processing (3ms)
+11-23-2026 13:56:50-debug: asset-db-hook-engine-extends-afterRefresh (3ms)

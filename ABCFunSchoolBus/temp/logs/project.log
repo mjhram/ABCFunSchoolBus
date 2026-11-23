@@ -1,0 +1,80 @@
+11-23-2026 17:25:19 - log: Load engine in C:\ProgramData\cocos\editors\Creator\3.8.8\resources\resources\3d\engine
+11-23-2026 17:25:20 - log: Register native engine in C:\ProgramData\cocos\editors\Creator\3.8.8\resources\resources\3d\engine\native
+11-23-2026 17:25:21 - log: Request namespace: device-list
+11-23-2026 17:25:29 - log: [RB] extension loaded v0.1.12 sha256=3d66302ab21f7808de5cd6d5908c063a9d9ca2e38ad335388e5cae82906ce7ff path=C:\Users\hp2\.CocosCreator\builtin-extensions\3.8.8\runtime-bridge
+11-23-2026 17:25:30 - log: Cocos MCP Server extension loaded
+11-23-2026 17:25:30 - log: Console capture setup initialized
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for build-worker:ready (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for build-worker:closed (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for scene:ready (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for scene:close (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for scene:light-probe-edit-mode-changed (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for scene:light-probe-bounding-box-edit-mode-changed (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for asset-db:ready (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for asset-db:close (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for asset-db:asset-add (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for asset-db:asset-change (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for asset-db:asset-delete (simulated)
+11-23-2026 17:25:30 - log: [ToolManager] Initialized 50 tools from MCP server
+11-23-2026 17:25:30 - log: [MCPServer] Initializing tools...
+11-23-2026 17:25:30 - log: Console capture setup initialized
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for build-worker:ready (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for build-worker:closed (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for scene:ready (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for scene:close (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for scene:light-probe-edit-mode-changed (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for scene:light-probe-bounding-box-edit-mode-changed (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for asset-db:ready (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for asset-db:close (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for asset-db:asset-add (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for asset-db:asset-change (simulated)
+11-23-2026 17:25:30 - log: [BroadcastTools] Added listener for asset-db:asset-delete (simulated)
+11-23-2026 17:25:30 - log: [MCPServer] Tools initialized successfully
+11-23-2026 17:25:30 - log: [MCPServer] Updating enabled tools: 50 tools
+11-23-2026 17:25:30 - log: [MCPServer] Setup tools: 50 tools available
+11-23-2026 17:25:37 - error: Cannot set properties of undefined (setting 'type')TypeError: Cannot set properties of undefined (setting 'type')
+    at PluginManager.internalRegister (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\builder\dist\browser\plugin.ccc:1:2370)
+    at PluginManager.register (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\builder\dist\share\plugin-manager.ccc:1:3726)
+    at PluginManager.register (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\builder\dist\browser\plugin.ccc:1:1275)
+    at PluginManager.step (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\builder\dist\share\plugin-manager.ccc:1:2477)
+    at PluginManager.addTask (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\builder\dist\share\plugin-manager.ccc:1:2252)
+11-23-2026 17:25:37 - error: cocos-service register panelInfo failed!
+11-23-2026 17:25:43 - log: [Scene] meshopt wasm decoder initialized
+11-23-2026 17:25:43 - log: [Scene] [box2d]:box2d wasm lib loaded.
+11-23-2026 17:25:43 - log: [Scene] [bullet]:bullet wasm lib loaded.
+11-23-2026 17:25:43 - log: [Scene] [PHYSICS]: using builtin.
+11-23-2026 17:25:43 - log: [Scene] Cocos Creator v3.8.8
+11-23-2026 17:25:43 - log: [Scene] Using custom pipeline: Builtin
+11-23-2026 17:25:43 - log: [Scene] [PHYSICS]: switch from builtin to bullet.
+11-23-2026 17:25:43 - log: [Scene] [PHYSICS2D]: switch from builtin to box2d.
+11-23-2026 17:25:55 - log: [Window] [MCP Panel] Vue3 app mounted successfully
+11-23-2026 17:25:55 - log: [Window] [Vue App] Loaded tools: 50
+11-23-2026 17:25:55 - log: [Window] [Vue App] Server settings loaded from status: {
+  port: 3000,
+  autoStart: false,
+  enableDebugLog: false,
+  allowedOrigins: [ '*' ],
+  maxConnections: 10,
+  debugLog: false
+}
+11-23-2026 17:26:08 - log: [MCPServer] Initializing tools...
+11-23-2026 17:26:08 - log: Console capture setup initialized
+11-23-2026 17:26:08 - log: [BroadcastTools] Added listener for build-worker:ready (simulated)
+11-23-2026 17:26:08 - log: [BroadcastTools] Added listener for build-worker:closed (simulated)
+11-23-2026 17:26:08 - log: [BroadcastTools] Added listener for scene:ready (simulated)
+11-23-2026 17:26:08 - log: [BroadcastTools] Added listener for scene:close (simulated)
+11-23-2026 17:26:08 - log: [BroadcastTools] Added listener for scene:light-probe-edit-mode-changed (simulated)
+11-23-2026 17:26:08 - log: [BroadcastTools] Added listener for scene:light-probe-bounding-box-edit-mode-changed (simulated)
+11-23-2026 17:26:08 - log: [BroadcastTools] Added listener for asset-db:ready (simulated)
+11-23-2026 17:26:08 - log: [BroadcastTools] Added listener for asset-db:close (simulated)
+11-23-2026 17:26:08 - log: [BroadcastTools] Added listener for asset-db:asset-add (simulated)
+11-23-2026 17:26:08 - log: [BroadcastTools] Added listener for asset-db:asset-change (simulated)
+11-23-2026 17:26:08 - log: [BroadcastTools] Added listener for asset-db:asset-delete (simulated)
+11-23-2026 17:26:08 - log: [MCPServer] Tools initialized successfully
+11-23-2026 17:26:08 - log: [MCPServer] Starting HTTP server on port 3000...
+11-23-2026 17:26:08 - log: [MCPServer] ✅ HTTP server started successfully on http://127.0.0.1:3000
+11-23-2026 17:26:08 - log: [MCPServer] Health check: http://127.0.0.1:3000/health
+11-23-2026 17:26:08 - log: [MCPServer] MCP endpoint: http://127.0.0.1:3000/mcp
+11-23-2026 17:26:08 - log: [MCPServer] Setup tools: 50 tools available
+11-23-2026 17:26:08 - log: [MCPServer] 🚀 MCP Server is ready for connections
+11-23-2026 17:26:08 - log: [Window] [Vue App] Save settings result: null

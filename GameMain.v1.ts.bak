@@ -1,0 +1,796 @@
+import {
+    _decorator, Component, Node, Sprite, SpriteFrame, UITransform, Graphics, Color, Label,
+    UIOpacity, Vec3, tween, resources, input, Input, EventKeyboard, KeyCode, view, ResolutionPolicy,
+    Canvas, Camera, Layers, ImageAsset, Texture2D,
+} from 'cc';
+const { ccclass } = _decorator;
+
+/**
+ * ABC Fun School Bus  -  2.5D (pseudo-3D perspective) driving game for kids.
+ * Design resolution 1280x720 (16:9, landscape).
+ *
+ * World model: the bus sits at z = 0 and drives "into" the screen.
+ * Every object has a lateral position x (metres) and a depth z (metres).
+ * Perspective:  screenX = (x - busX) * F / z      screenY = HORIZON - CAM_H * F / z
+ * Sprites are scaled by F / z, so they grow as they approach.
+ */
+
+// ---------------------------------------------------------------- constants
+const W = 1280;
+const H = 720;
+const HOR = 40;            // horizon line (screen y, 0 = screen centre)
+const CAM_H = 1.2;         // camera height above road (m)
+const F = 620;             // focal length (px)
+const ROAD_HALF = 3.2;     // half width of the road (m)
+const BUS_LIM = 1.9;       // how far the bus may steer from the centre (m)
+const CRUISE = 7;          // cruising speed (m/s)
+const ACCEL = 4;
+const BRAKE_DECEL = 12;
+const STEER_SPEED = 2.6;   // m/s
+const SPAWN_Z = 70;
+const COLLECT_Z = 2.2;
+const LETTER_CY = 140;     // letter centre above ground in sprite units (1m = 100 units)
+const FONT = "'Arial Rounded MT Bold','Comic Sans MS','Trebuchet MS',Arial";
+
+const LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').map((ch) => 'letter_' + ch);
+const FILES = [...LETTERS,
+    'button_arrow_left', 'button_arrow_right', 'button_brake', 'button_brake_pressed', 'button_horn',
+    'button_horn_pressed', 'dashboard', 'mascot_puppy', 'progressbar_frame',
+    'rearview_mirror', 'scenery_houses', 'scenery_trees', 'speech_bubble', 'speedometer', 'star_golden',
+    'steering_wheel', 'traffic_ice_cream_van', 'vfx_smoke_puff', 'vfx_star_burst',
+];
+
+const C = (hex: string, a = 255): Color => {
+    const n = parseInt(hex.slice(1), 16);
+    return new Color((n >> 16) & 255, (n >> 8) & 255, n & 255, a);
+};
+
+interface Item {
+    node: Node;
+    op: UIOpacity;
+    kind: 'letter' | 'tree' | 'house' | 'van';
+    z: number;
+    x: number;
+    vz: number;          // extra approach speed (oncoming traffic)
+    flip: number;
+    phase: number;
+    bob?: Node;
+}
+
+@ccclass('GameMain')
+export class GameMain extends Component {
+    private frames: Record<string, SpriteFrame> = {};
+    private built = false;
+
+    // state
+    private busX = 0;
+    private v = 0;
+    private dist = 0;
+    private t = 0;
+    private keyL = false;
+    private keyR = false;
+    private touchL = false;
+    private touchR = false;
+    private steerSmooth = 0;
+    private hornCool = 0;
+    private brakeHeld = false;
+    private stars = 3;
+    private prog = 3;
+    private celebrating = false;
+    private nextLetter = 3;
+    private genLetter = 16;
+    private genTree = 1;
+    private genHouse = 6;
+    private vanDist = 40;
+    private bubbleTimer = 0;
+    private items: Item[] = [];
+
+    // nodes
+    private worldRoot!: Node;
+    private itemsRoot!: Node;
+    private hud!: Node;
+    private groundG!: Graphics;
+    private wheel!: Node;
+    private mirror!: Node;
+    private starIcon!: Node;
+    private starsLbl!: Label;
+    private progLbl!: Label;
+    private speedLbl!: Label;
+    private bubbleLbl!: Label;
+    private bubble!: Node;
+    private progStars: Node[] = [];
+    private clouds: Node[] = [];
+    private hornSpr!: Sprite;
+    private brakeSpr!: Sprite;
+    private puppy!: Node;
+    private banner!: Node;
+    private audio: any = null;
+
+    // ------------------------------------------------------------ life-cycle
+    onLoad() {
+        view.setDesignResolutionSize(W, H, ResolutionPolicy.SHOW_ALL);
+        this.ensureCanvas();
+        Promise.all(FILES.map((n) => this.loadFrame(n))).then(() => {
+            this.build();
+            this.built = true;
+        });
+        input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
+        input.on(Input.EventType.KEY_UP, this.onKeyUp, this);
+        input.on(Input.EventType.TOUCH_START, () => this.ac(), this);
+    }
+
+    onDestroy() {
+        input.off(Input.EventType.KEY_DOWN, this.onKeyDown, this);
+        input.off(Input.EventType.KEY_UP, this.onKeyUp, this);
+    }
+
+    private ensureCanvas() {
+        let ut = this.node.getComponent(UITransform);
+        if (!ut) ut = this.node.addComponent(UITransform);
+        ut.setContentSize(W, H);
+        let cv = this.node.getComponent(Canvas);
+        if (!cv) cv = this.node.addComponent(Canvas);
+        if (!cv.cameraComponent) {
+            let cam = this.node.getComponentInChildren(Camera);
+            if (!cam) {
+                const cn = new Node('Camera');
+                cn.layer = Layers.Enum.UI_2D;
+                cn.parent = this.node;
+                cn.setPosition(0, 0, 1000);
+                cam = cn.addComponent(Camera);
+                cam.projection = Camera.ProjectionType.ORTHO;
+                cam.orthoHeight = H / 2;
+                cam.near = 1;
+                cam.far = 2000;
+                cam.visibility = Layers.Enum.UI_2D;
+            }
+            cam.clearFlags = Camera.ClearFlag.SOLID_COLOR;
+            cam.clearColor = C('#87CEEB');
+            cv.cameraComponent = cam;
+        }
+    }
+
+    private loadFrame(name: string): Promise<void> {
+        return new Promise((res) => {
+            resources.load(`textures/${name}/spriteFrame`, SpriteFrame, (e, sf) => {
+                if (!e && sf) { this.frames[name] = sf; res(); return; }
+                resources.load(`textures/${name}`, ImageAsset, (e2, img) => {
+                    if (!e2 && img) {
+                        const s = new SpriteFrame();
+                        const tex = new Texture2D();
+                        tex.image = img;
+                        s.texture = tex;
+                        this.frames[name] = s;
+                    } else {
+                        console.warn('missing texture', name);
+                    }
+                    res();
+                });
+            });
+        });
+    }
+
+    // ------------------------------------------------------------- node utils
+    private mk(name: string, parent: Node, x = 0, y = 0): Node {
+        const n = new Node(name);
+        n.layer = Layers.Enum.UI_2D;
+        n.parent = parent;
+        n.setPosition(x, y, 0);
+        return n;
+    }
+
+    private spr(parent: Node, frame: string, w: number, h: number, x: number, y: number, ay = 0.5): Node {
+        const n = this.mk(frame, parent, x, y);
+        const ut = n.addComponent(UITransform);
+        ut.setContentSize(w, h);
+        ut.setAnchorPoint(0.5, ay);
+        const s = n.addComponent(Sprite);
+        s.sizeMode = Sprite.SizeMode.CUSTOM;
+        s.spriteFrame = this.frames[frame] || null;
+        return n;
+    }
+
+    private ratio(frame: string): number {
+        const sf = this.frames[frame];
+        return sf ? sf.rect.width / sf.rect.height : 1;
+    }
+
+    private lbl(parent: Node, text: string, size: number, x: number, y: number, color: string,
+        outline?: string, ow = 4): Label {
+        const n = this.mk('label', parent, x, y);
+        n.addComponent(UITransform);
+        const l = n.addComponent(Label);
+        l.useSystemFont = true;
+        l.fontFamily = FONT;
+        l.string = text;
+        l.fontSize = size;
+        l.lineHeight = size + 8;
+        l.isBold = true;
+        l.color = C(color);
+        l.horizontalAlign = Label.HorizontalAlign.CENTER;
+        l.verticalAlign = Label.VerticalAlign.CENTER;
+        l.overflow = Label.Overflow.NONE;
+        if (outline) {
+            l.enableOutline = true;
+            l.outlineColor = C(outline);
+            l.outlineWidth = ow;
+        }
+        return l;
+    }
+
+    private poly(g: Graphics, pts: number[], color: Color) {
+        g.fillColor = color;
+        g.moveTo(pts[0], pts[1]);
+        for (let i = 2; i < pts.length; i += 2) g.lineTo(pts[i], pts[i + 1]);
+        g.close();
+        g.fill();
+    }
+
+    // ------------------------------------------------------------------ build
+    private build() {
+        const root = this.node;
+
+        // 1. sky + sun + hills (static)
+        const sky = this.mk('Sky', root).addComponent(Graphics);
+        this.drawSky(sky);
+
+        // 2. clouds (drifting)
+        const cloudRoot = this.mk('Clouds', root);
+        [[-420, 215, 0.9], [120, 245, 0.7], [470, 190, 1.0]].forEach(([x, y, s], i) => {
+            const c = this.spr(cloudRoot, 'vfx_smoke_puff', 260 * s, 260 * s * 0.67, x, y);
+            c.addComponent(UIOpacity).opacity = 235;
+            this.clouds.push(c);
+        });
+
+        // 3. world (ground + scenery + letters)
+        this.worldRoot = this.mk('World', root);
+        this.groundG = this.mk('Ground', this.worldRoot).addComponent(Graphics);
+        const haze = this.mk('Haze', this.worldRoot).addComponent(Graphics);
+        for (let i = 0; i < 8; i++) {
+            haze.fillColor = C('#E8F6FF', Math.round(120 * (1 - i / 8)));
+            haze.rect(-1400, HOR - 6 - i * 4, 2800, 5);
+            haze.fill();
+        }
+        this.itemsRoot = this.mk('Items', this.worldRoot);
+
+        // 4. bus cabin (windshield frame + dashboard body)
+        const cabin = this.mk('Cabin', root).addComponent(Graphics);
+        this.drawCabin(cabin);
+
+        // 5. dashboard props
+        const cab = this.mk('CabinProps', root);
+        this.spr(cab, 'dashboard', 210, 96, 330, -192);
+        this.mirror = this.spr(cab, 'rearview_mirror', 140, 140 / this.ratio('rearview_mirror'), 335, 228);
+        this.spr(cab, 'speedometer', 122, 122, -330, -212);
+        this.speedLbl = this.lbl(cab, '0 km/h', 22, -330, -284, '#FFFFFF', '#7A4B00', 4);
+        this.wheel = this.spr(cab, 'steering_wheel', 292, 292 / this.ratio('steering_wheel'), 0, -168);
+
+        // 6. HUD
+        this.hud = this.mk('HUD', root);
+        this.buildHud();
+
+        // 6b. letterbox bars: hide anything outside the 16:9 play area
+        const bars = this.mk('Letterbox', root).addComponent(Graphics);
+        bars.fillColor = C('#000000');
+        bars.rect(W / 2, -1200, 1600, 2400);
+        bars.rect(-W / 2 - 1600, -1200, 1600, 2400);
+        bars.rect(-3000, H / 2, 6000, 1200);
+        bars.rect(-3000, -H / 2 - 1200, 6000, 1200);
+        bars.fill();
+
+        // 7. initial traffic: three letters at different distances
+        this.addLetter(0, 3.6, -1.2);
+        this.addLetter(1, 9.5, 0.9);
+        this.addLetter(2, 16, -1.4);
+        while (this.genTree < SPAWN_Z) { this.addTree(this.genTree); this.genTree += 5 + Math.random() * 3; }
+        while (this.genHouse < SPAWN_Z) { this.addHouse(this.genHouse); this.genHouse += 12 + Math.random() * 6; }
+        while (this.genLetter < SPAWN_Z) { this.genLetter += 9; this.addLetter(this.nextLetter++, this.genLetter, this.randLane()); }
+    }
+
+    private drawSky(g: Graphics) {
+        const top = C('#3FA9F5');
+        const bot = C('#C9EDFF');
+        const bands = 18;
+        const y0 = HOR;
+        const hh = H / 2 - y0 + 40;
+        for (let i = 0; i < bands; i++) {
+            const c = new Color();
+            Color.lerp(c, bot, top, i / (bands - 1));
+            g.fillColor = c;
+            g.rect(-W, y0 + (hh / bands) * i, W * 2, hh / bands + 1);
+            g.fill();
+        }
+        // sun with soft glow
+        [[96, 40], [72, 70], [52, 130], [40, 255]].forEach(([r, a]) => {
+            g.fillColor = C('#FFF3A0', a);
+            g.circle(-390, 215, r);
+            g.fill();
+        });
+        // distant hills
+        const hills: number[][] = [[-520, 90, 60, '#9BE07A'], [-200, 110, 46, '#8FD86C'], [150, 95, 58, '#9BE07A'],
+            [480, 120, 50, '#8FD86C'], [760, 100, 60, '#9BE07A'], [-800, 100, 55, '#8FD86C']] as any;
+        hills.forEach((h: any) => {
+            g.fillColor = C(h[3]);
+            g.ellipse(h[0], HOR, h[1] + 60, h[2]);
+            g.fill();
+        });
+    }
+
+    private drawCabin(g: Graphics) {
+        const X = 740;
+        const yellow = C('#FFC61A');
+        // roof header
+        g.fillColor = yellow;
+        g.moveTo(-X, H / 2 + 10);
+        g.lineTo(X, H / 2 + 10);
+        g.lineTo(X, 295);
+        g.quadraticCurveTo(0, 252, -X, 295);
+        g.close();
+        g.fill();
+        // header highlight stripe
+        g.fillColor = C('#FFE066');
+        g.moveTo(-X, H / 2 + 10);
+        g.lineTo(X, H / 2 + 10);
+        g.lineTo(X, 350);
+        g.lineTo(-X, 350);
+        g.close();
+        g.fill();
+        // trim
+        g.lineWidth = 8;
+        g.strokeColor = C('#B87400');
+        g.moveTo(-X, 295);
+        g.quadraticCurveTo(0, 252, X, 295);
+        g.stroke();
+        // side pillars
+        this.poly(g, [-X, H / 2 + 10, -520, H / 2 + 10, -588, -170, -X, -170], yellow);
+        this.poly(g, [X, H / 2 + 10, 520, H / 2 + 10, 588, -170, X, -170], yellow);
+        g.lineWidth = 8;
+        g.strokeColor = C('#B87400');
+        g.moveTo(-520, 300); g.lineTo(-588, -170); g.stroke();
+        g.moveTo(520, 300); g.lineTo(588, -170); g.stroke();
+        // glass glare
+        this.poly(g, [-470, 270, -380, 270, -500, -60, -560, -60], C('#FFFFFF', 28));
+        // dashboard body
+        g.fillColor = C('#F4A300');
+        g.moveTo(-X, -420);
+        g.lineTo(-X, -205);
+        g.quadraticCurveTo(0, -95, X, -205);
+        g.lineTo(X, -420);
+        g.close();
+        g.fill();
+        // dashboard lighter top band
+        g.fillColor = C('#FFC93C');
+        g.moveTo(-X, -205);
+        g.quadraticCurveTo(0, -95, X, -205);
+        g.lineTo(X, -240);
+        g.quadraticCurveTo(0, -132, -X, -240);
+        g.close();
+        g.fill();
+        // lower panel
+        g.fillColor = C('#E08F00');
+        g.rect(-X, -420, X * 2, 95);
+        g.fill();
+        // rubber trim where glass meets dash
+        g.lineWidth = 9;
+        g.strokeColor = C('#2E2A25');
+        g.moveTo(-X, -203);
+        g.quadraticCurveTo(0, -93, X, -203);
+        g.stroke();
+    }
+
+    private buildHud() {
+        const hud = this.hud;
+
+        // title
+        this.lbl(hud, 'ABC Fun School Bus', 56, 0, 322, '#FFFFFF', '#D9480F', 7);
+
+        // stars counter (top-left)
+        this.starIcon = this.spr(hud, 'star_golden', 58, 56, -585, 322);
+        this.starsLbl = this.lbl(hud, `Stars: ${this.stars}`, 34, -445, 320, '#FFFFFF', '#8A4B00', 5);
+
+        // progress bar (top-right)
+        const bw = 300;
+        const bh = bw / this.ratio('progressbar_frame');
+        const bar = this.mk('ProgressBar', hud, 480, 322);
+        this.spr(bar, 'progressbar_frame', bw, bh, 0, 0);
+        const cx = [0.119, 0.311, 0.5, 0.69, 0.879];
+        for (let i = 0; i < 5; i++) {
+            const s = this.spr(bar, 'star_golden', bh * 0.62, bh * 0.6, (cx[i] - 0.5) * bw, 0);
+            this.progStars.push(s);
+        }
+        this.progLbl = this.lbl(hud, '', 22, 480, 274, '#FFFFFF', '#1F6FB5', 4);
+
+        // instruction bubble
+        this.bubble = this.mk('Bubble', hud, 0, 226);
+        this.spr(this.bubble, 'speech_bubble', 300, 112, 0, 0);
+        this.bubbleLbl = this.lbl(this.bubble, 'Collect the letters!', 27, 0, 8, '#D9480F');
+        tween(this.bubble).repeatForever(
+            tween().to(0.8, { scale: new Vec3(1.04, 1.04, 1) }, { easing: 'sineInOut' })
+                .to(0.8, { scale: new Vec3(1, 1, 1) }, { easing: 'sineInOut' })).start();
+
+        // steering arrows
+        const left = this.spr(hud, 'button_arrow_left', 200, 200, -525, -245);
+        const right = this.spr(hud, 'button_arrow_right', 200, 200, 525, -245);
+        this.bindBtn(left, () => { this.touchL = true; left.setScale(0.9, 0.9, 1); },
+            () => { this.touchL = false; left.setScale(1, 1, 1); });
+        this.bindBtn(right, () => { this.touchR = true; right.setScale(0.9, 0.9, 1); },
+            () => { this.touchR = false; right.setScale(1, 1, 1); });
+
+        // horn + brake
+        const horn = this.spr(hud, 'button_horn', 108, 108, -190, -292);
+        const brake = this.spr(hud, 'button_brake', 108, 108, 190, -292);
+        this.hornSpr = horn.getComponent(Sprite)!;
+        this.brakeSpr = brake.getComponent(Sprite)!;
+        this.lbl(hud, 'HORN', 22, -190, -228, '#FFFFFF', '#1E7B1E', 4);
+        this.lbl(hud, 'BRAKE', 22, 190, -228, '#FFFFFF', '#A51D1D', 4);
+        this.bindBtn(horn, () => this.pressHorn(true), () => this.pressHorn(false));
+        this.bindBtn(brake, () => this.pressBrake(true), () => this.pressBrake(false));
+
+        // celebration (hidden until 5 stars)
+        this.puppy = this.spr(hud, 'mascot_puppy', 230, 230 / this.ratio('mascot_puppy'), -400, -20);
+        this.puppy.active = false;
+        this.banner = this.mk('Banner', hud, 0, 120);
+        this.lbl(this.banner, 'Great job!', 84, 0, 0, '#FFE066', '#D9480F', 9);
+        this.banner.active = false;
+
+        this.updateHud();
+    }
+
+    private bindBtn(n: Node, down: () => void, up: () => void) {
+        n.on(Node.EventType.TOUCH_START, down, this);
+        n.on(Node.EventType.TOUCH_END, up, this);
+        n.on(Node.EventType.TOUCH_CANCEL, up, this);
+    }
+
+    // ---------------------------------------------------------------- input
+    private onKeyDown(e: EventKeyboard) {
+        switch (e.keyCode) {
+            case KeyCode.ARROW_LEFT: case KeyCode.KEY_A: this.keyL = true; break;
+            case KeyCode.ARROW_RIGHT: case KeyCode.KEY_D: this.keyR = true; break;
+            case KeyCode.SPACE: case KeyCode.KEY_H: this.pressHorn(true); break;
+            case KeyCode.ARROW_DOWN: case KeyCode.KEY_S: this.pressBrake(true); break;
+        }
+    }
+
+    private onKeyUp(e: EventKeyboard) {
+        switch (e.keyCode) {
+            case KeyCode.ARROW_LEFT: case KeyCode.KEY_A: this.keyL = false; break;
+            case KeyCode.ARROW_RIGHT: case KeyCode.KEY_D: this.keyR = false; break;
+            case KeyCode.SPACE: case KeyCode.KEY_H: this.pressHorn(false); break;
+            case KeyCode.ARROW_DOWN: case KeyCode.KEY_S: this.pressBrake(false); break;
+        }
+    }
+
+    private pressHorn(down: boolean) {
+        if (!this.built) return;
+        this.hornSpr.spriteFrame = this.frames[down ? 'button_horn_pressed' : 'button_horn'] || this.hornSpr.spriteFrame;
+        if (down && this.hornCool <= 0) {
+            this.hornCool = 0.5;
+            this.tone(392, 0.55, 'square', 0.12);
+            this.tone(311, 0.55, 'square', 0.12);
+            this.say('Beep beep!', 1.2);
+        }
+    }
+
+    private pressBrake(down: boolean) {
+        if (!this.built) return;
+        this.brakeHeld = down;
+        this.brakeSpr.spriteFrame = this.frames[down ? 'button_brake_pressed' : 'button_brake'] || this.brakeSpr.spriteFrame;
+    }
+
+    // ---------------------------------------------------------------- audio
+    private ac(): any {
+        try {
+            if (!this.audio) {
+                const AC = (window as any).AudioContext || (window as any).webkitAudioContext;
+                if (AC) this.audio = new AC();
+            }
+            if (this.audio && this.audio.state === 'suspended') this.audio.resume();
+        } catch (e) { /* no audio available */ }
+        return this.audio;
+    }
+
+    private tone(freq: number, dur: number, type: string, vol: number, delay = 0) {
+        const a = this.ac();
+        if (!a) return;
+        try {
+            const o = a.createOscillator();
+            const g = a.createGain();
+            o.type = type;
+            const t0 = a.currentTime + delay;
+            o.frequency.setValueAtTime(freq, t0);
+            g.gain.setValueAtTime(0.0001, t0);
+            g.gain.exponentialRampToValueAtTime(vol, t0 + 0.02);
+            g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+            o.connect(g);
+            g.connect(a.destination);
+            o.start(t0);
+            o.stop(t0 + dur + 0.05);
+        } catch (e) { /* ignore */ }
+    }
+
+    private speak(text: string) {
+        try {
+            const ss = (window as any).speechSynthesis;
+            const Utt = (window as any).SpeechSynthesisUtterance;
+            if (ss && Utt) {
+                ss.cancel();
+                const u = new Utt(text);
+                u.rate = 0.85;
+                u.pitch = 1.3;
+                ss.speak(u);
+            }
+        } catch (e) { /* ignore */ }
+    }
+
+    private say(text: string, seconds: number) {
+        this.bubbleLbl.string = text;
+        this.bubbleTimer = seconds;
+    }
+
+    // -------------------------------------------------------------- spawning
+    private randLane(): number {
+        const lanes = [-1.6, -0.8, 0, 0.8, 1.6];
+        return lanes[Math.floor(Math.random() * lanes.length)];
+    }
+
+    private addItem(kind: Item['kind'], frame: string, wm: number, z: number, x: number, vz = 0): Item {
+        const node = this.mk(kind, this.itemsRoot);
+        const op = node.addComponent(UIOpacity);
+        const hm = wm / this.ratio(frame);
+        this.spr(node, frame, wm * 100, hm * 100, 0, 0, 0);
+        const it: Item = { node, op, kind, z, x, vz, flip: Math.random() < 0.5 ? -1 : 1, phase: Math.random() * 6.28 };
+        this.items.push(it);
+        return it;
+    }
+
+    private addTree(z: number) {
+        const side = Math.random() < 0.5 ? -1 : 1;
+        this.addItem('tree', 'scenery_trees', 4.2 + Math.random() * 1.4, z, side * (ROAD_HALF + 1.8 + Math.random() * 3.5));
+    }
+
+    private addHouse(z: number) {
+        const side = Math.random() < 0.5 ? -1 : 1;
+        const it = this.addItem('house', 'scenery_houses', 6 + Math.random() * 1.5, z, side * (ROAD_HALF + 5.5 + Math.random() * 3));
+        it.flip = 1;
+    }
+
+    private addVan(z: number) {
+        const it = this.addItem('van', 'traffic_ice_cream_van', 1.9, z, -2.7, 5);
+        it.flip = 1;
+    }
+
+    private addLetter(idx: number, z: number, x: number) {
+        const ch = String.fromCharCode(65 + (idx % 26));
+        const frame = 'letter_' + ch;
+        const node = this.mk('letter_' + ch, this.itemsRoot);
+        const op = node.addComponent(UIOpacity);
+        // soft ground shadow
+        const sh = this.mk('shadow', node, 0, 2).addComponent(Graphics);
+        sh.fillColor = C('#000000', 70);
+        sh.ellipse(0, 0, 40, 9);
+        sh.fill();
+        const bob = this.mk('bob', node, 0, LETTER_CY);
+        const r = this.ratio(frame);
+        this.spr(bob, frame, 100 * r, 100, 0, 0);
+        const it: Item = { node, op, kind: 'letter', z, x, vz: 0, flip: 1, phase: Math.random() * 6.28, bob };
+        (it as any).ch = ch;
+        this.items.push(it);
+    }
+
+    // --------------------------------------------------------------- update
+    update(dt: number) {
+        if (!this.built) return;
+        dt = Math.min(dt, 0.05);
+        this.t += dt;
+        this.hornCool -= dt;
+
+        // speed
+        if (this.brakeHeld) this.v = Math.max(0, this.v - BRAKE_DECEL * dt);
+        else this.v = Math.min(CRUISE, this.v + ACCEL * dt);
+        const move = this.v * dt;
+        this.dist += move;
+
+        // steering
+        let steer = (this.keyR ? 1 : 0) - (this.keyL ? 1 : 0) + (this.touchR ? 1 : 0) - (this.touchL ? 1 : 0);
+        steer = Math.max(-1, Math.min(1, steer));
+        this.steerSmooth += (steer - this.steerSmooth) * Math.min(1, dt * 8);
+        const grip = 0.35 + 0.65 * Math.min(1, this.v / 3);
+        this.busX = Math.max(-BUS_LIM, Math.min(BUS_LIM, this.busX + steer * STEER_SPEED * grip * dt));
+        this.wheel.angle = -this.steerSmooth * 60;
+
+        // road rumble
+        const rumble = Math.min(1, this.v / CRUISE);
+        this.worldRoot.setPosition(0, Math.sin(this.t * 17) * 1.3 * rumble, 0);
+        this.mirror.angle = Math.sin(this.t * 3.1) * 1.2 * rumble;
+
+        // clouds drift
+        this.clouds.forEach((c, i) => {
+            let x = c.position.x + (6 + i * 3) * dt;
+            if (x > 900) x = -900;
+            c.setPosition(x, c.position.y, 0);
+        });
+
+        // generators
+        this.genTree -= move; this.genHouse -= move; this.genLetter -= move; this.vanDist -= move;
+        while (this.genTree < SPAWN_Z) { this.genTree += 5 + Math.random() * 3; this.addTree(this.genTree); }
+        while (this.genHouse < SPAWN_Z) { this.genHouse += 12 + Math.random() * 6; this.addHouse(this.genHouse); }
+        while (this.genLetter < SPAWN_Z) { this.genLetter += 9; this.addLetter(this.nextLetter++, this.genLetter, this.randLane()); }
+        if (this.vanDist <= 0) { this.vanDist = 70 + Math.random() * 50; this.addVan(SPAWN_Z); }
+
+        this.drawGround();
+        this.updateItems(dt, move);
+
+        // HUD
+        this.speedLbl.string = `${Math.round(this.v * 5)} km/h`;
+        if (this.bubbleTimer > 0) {
+            this.bubbleTimer -= dt;
+            if (this.bubbleTimer <= 0) this.bubbleLbl.string = 'Collect the letters!';
+        }
+    }
+
+    private Y(z: number): number { return HOR - CAM_H * F / z; }
+    private X(wx: number, z: number): number { return (wx - this.busX) * F / z; }
+
+    private drawGround() {
+        const g = this.groundG;
+        g.clear();
+        const ZN = 1.0, ZF = 1500;
+        const R = ROAD_HALF;
+
+        // grass + mown stripes
+        g.fillColor = C('#7ED957');
+        g.rect(-1400, -800, 2800, HOR + 800);
+        g.fill();
+        const stripe = 3;
+        for (let m = Math.floor(this.dist / stripe); m <= Math.floor((this.dist + 90) / stripe); m++) {
+            if (m % 2 === 0) continue;
+            const z0 = Math.max(m * stripe - this.dist, ZN);
+            const z1 = Math.min((m + 1) * stripe - this.dist, 90);
+            if (z1 <= z0) continue;
+            this.poly(g, [-1400, this.Y(z0), 1400, this.Y(z0), 1400, this.Y(z1), -1400, this.Y(z1)], C('#6CCB48'));
+        }
+
+        // asphalt
+        this.poly(g, [this.X(-R, ZN), this.Y(ZN), this.X(R, ZN), this.Y(ZN), this.X(R, ZF), this.Y(ZF), this.X(-R, ZF), this.Y(ZF)], C('#4B4B55'));
+
+        // red / white kerbs
+        const ks = 2;
+        for (let m = Math.floor(this.dist / ks); m <= Math.floor((this.dist + 60) / ks); m++) {
+            const z0 = Math.max(m * ks - this.dist, ZN);
+            const z1 = Math.min((m + 1) * ks - this.dist, 60);
+            if (z1 <= z0) continue;
+            const col = C(m % 2 === 0 ? '#FF5A5F' : '#FFFFFF');
+            for (const s of [-1, 1]) {
+                const a = s * R, b = s * (R + 0.45);
+                this.poly(g, [this.X(a, z0), this.Y(z0), this.X(b, z0), this.Y(z0), this.X(b, z1), this.Y(z1), this.X(a, z1), this.Y(z1)], col);
+            }
+        }
+        // far kerbs (plain)
+        for (const s of [-1, 1]) {
+            const a = s * R, b = s * (R + 0.45);
+            this.poly(g, [this.X(a, 60), this.Y(60), this.X(b, 60), this.Y(60), this.X(b, ZF), this.Y(ZF), this.X(a, ZF), this.Y(ZF)], C('#F2D7D7'));
+        }
+
+        // white edge lines
+        for (const s of [-1, 1]) {
+            const a = s * (R - 0.55), b = s * (R - 0.4);
+            this.poly(g, [this.X(a, ZN), this.Y(ZN), this.X(b, ZN), this.Y(ZN), this.X(b, ZF), this.Y(ZF), this.X(a, ZF), this.Y(ZF)], C('#FFFFFF'));
+        }
+
+        // dashed centre line
+        const per = 5, dash = 2.5;
+        for (let m = Math.floor(this.dist / per); m <= Math.floor((this.dist + 90) / per); m++) {
+            const z0 = Math.max(m * per - this.dist, ZN);
+            const z1 = Math.min(m * per + dash - this.dist, 90);
+            if (z1 <= z0) continue;
+            this.poly(g, [this.X(-0.1, z0), this.Y(z0), this.X(0.1, z0), this.Y(z0), this.X(0.1, z1), this.Y(z1), this.X(-0.1, z1), this.Y(z1)], C('#FFD84A'));
+        }
+    }
+
+    private updateItems(dt: number, move: number) {
+        for (let i = this.items.length - 1; i >= 0; i--) {
+            const it = this.items[i];
+            it.z -= move + it.vz * dt;
+
+            if (it.kind === 'letter' && it.z <= COLLECT_Z && Math.abs(it.x - this.busX) < 0.95) {
+                this.items.splice(i, 1);
+                this.collect(it);
+                continue;
+            }
+            if (it.z <= 0.8) {
+                it.node.destroy();
+                this.items.splice(i, 1);
+                continue;
+            }
+            this.place(it);
+        }
+        // painter's algorithm: far items first
+        this.items.sort((a, b) => b.z - a.z);
+        for (let i = 0; i < this.items.length; i++) {
+            if (this.items[i].node.getSiblingIndex() !== i) this.items[i].node.setSiblingIndex(i);
+        }
+    }
+
+    private place(it: Item) {
+        const z = it.z;
+        const s = F / z / 100;
+        it.node.setPosition(this.X(it.x, z), this.Y(z), 0);
+        it.node.setScale(s * it.flip, s, 1);
+        let a = 1;
+        if (z > 45) a = Math.max(0, (SPAWN_Z - z) / (SPAWN_Z - 45));
+        if (z < 1.4) a = Math.max(0, (z - 0.8) / 0.6);
+        it.op.opacity = Math.round(a * 255);
+        if (it.bob) {
+            it.bob.setPosition(0, LETTER_CY + Math.sin(this.t * 3 + it.phase) * 8, 0);
+            it.bob.angle = Math.sin(this.t * 2 + it.phase) * 7;
+        }
+    }
+
+    // ------------------------------------------------------------ collecting
+    private collect(it: Item) {
+        const ch: string = (it as any).ch;
+        const s = F / it.z / 100;
+        const px = this.X(it.x, it.z);
+        const py = this.Y(it.z) + LETTER_CY * s;
+
+        // letter pops and fades
+        tween(it.node).to(0.35, { scale: new Vec3(s * 1.7, s * 1.7, 1) }, { easing: 'backOut' })
+            .call(() => it.node.destroy()).start();
+        tween(it.op).to(0.35, { opacity: 0 }).start();
+
+        // sparkle burst
+        const burst = this.spr(this.hud, 'vfx_star_burst', 120, 120, px, py);
+        burst.setScale(0.4, 0.4, 1);
+        tween(burst).to(0.4, { scale: new Vec3(2.4, 2.4, 1) }, { easing: 'quadOut' })
+            .call(() => burst.destroy()).start();
+        burst.addComponent(UIOpacity);
+        tween(burst.getComponent(UIOpacity)!).to(0.4, { opacity: 0 }).start();
+
+        // star flies to the counter
+        const star = this.spr(this.hud, 'star_golden', 64, 62, px, py);
+        tween(star)
+            .to(0.8, { position: this.starIcon.position.clone(), scale: new Vec3(0.5, 0.5, 1) }, { easing: 'cubicIn' })
+            .call(() => { star.destroy(); this.onStar(); }).start();
+
+        this.tone(880, 0.25, 'sine', 0.25);
+        this.tone(1320, 0.35, 'sine', 0.25, 0.1);
+        this.say(`Great! ${ch}!`, 1.8);
+        this.speak(ch);
+    }
+
+    private onStar() {
+        this.stars++;
+        if (this.prog < 5) this.prog++;
+        this.updateHud();
+        tween(this.starIcon).to(0.12, { scale: new Vec3(1.35, 1.35, 1) })
+            .to(0.18, { scale: new Vec3(1, 1, 1) }).start();
+        if (this.prog >= 5 && !this.celebrating) this.celebrate();
+    }
+
+    private celebrate() {
+        this.celebrating = true;
+        [523, 659, 784, 1047].forEach((f, i) => this.tone(f, 0.28, 'triangle', 0.25, i * 0.16));
+        this.puppy.active = true;
+        this.banner.active = true;
+        this.puppy.setScale(0, 0, 1);
+        this.banner.setScale(0, 0, 1);
+        tween(this.puppy).to(0.4, { scale: new Vec3(1, 1, 1) }, { easing: 'backOut' }).start();
+        tween(this.banner).to(0.4, { scale: new Vec3(1, 1, 1) }, { easing: 'backOut' }).start();
+        this.say('You got 5 stars!', 2.6);
+        this.speak('Great job!');
+        this.scheduleOnce(() => {
+            this.puppy.active = false;
+            this.banner.active = false;
+            this.prog = 0;
+            this.celebrating = false;
+            this.updateHud();
+        }, 2.8);
+    }
+
+    private updateHud() {
+        this.starsLbl.string = `Stars: ${this.stars}`;
+        this.progLbl.string = `${this.prog} of 5`;
+        this.progStars.forEach((s, i) => (s.active = i < this.prog));
+    }
+}
